@@ -4,14 +4,9 @@
 
 @theme {
   --color-primary: #26303B;
-  --color-primary-light: #36424F;
-  --color-accent: #9A694E;
-  --color-accent-dark: #7E5239;
-  --color-accent-soft: #E8D5C8;
-  /* --color-canvas: #EBEBDD;  */
-  /* --color-canvas: #F8F5EF;  */
-
-  --color-surface: #F7F7F0;
-  --color-ink: #1B222A;
-  --color-muted: #66707A;
+  --color-secondary: #9A694E;
+  --color-secondary-dark: #7E5239;
+  --color-secondary-light: #D4A98C;
+  --color-canvas: #F8F5EF;
+  --color-surface: #FFFFFF;
 }
