@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Nibash</title>
+  <meta name="description" content="Get in touch with Nibash to book a site visit or ask about an apartment." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="./../assets/css/output.css" />
+</head>
+
+<body id="top" class="bg-canvas text-primary antialiased">
+
+  <!-- 1. index.html থেকে Top info bar, Main navbar আর Mobile sidebar কপি করে এখানে বসান -->
+
+  <main>
+
+    <!-- Page header -->
+    <section class="border-b border-primary/10 bg-canvas">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <nav aria-label="Breadcrumb" class="text-sm text-primary/60">
+          <a href="index.html" class="transition-colors hover:text-secondary-dark">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-primary">Contact</span>
+        </nav>
+        <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <h1 class="font-serif text-4xl leading-[1.05] text-primary sm:text-5xl lg:text-6xl">Let's talk about your next home</h1>
+          <p class="max-w-md leading-relaxed text-primary/70">
+            Ask a question, book a site visit or tell us what you are looking for. We usually reply within one working day.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form + info -->
+    <section class="bg-canvas py-14 lg:py-20">
+      <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
+
+        <!-- Form -->
+        <div class="lg:col-span-7">
+          <form action="#" method="post" class="bg-surface p-6 sm:p-10">
+            <h2 class="font-serif text-2xl text-primary sm:text-3xl">Send us a message</h2>
+            <p class="mt-2 text-sm text-primary/60">Fields marked with * are required.</p>
+
+            <div class="mt-8 grid gap-6 sm:grid-cols-2">
+
+              <div>
+                <label for="name" class="text-sm font-semibold text-primary">Full name *</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name"
+                  class="mt-2 w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary" />
+              </div>
+
+              <div>
+                <label for="phone" class="text-sm font-semibold text-primary">Phone *</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+880 1XXX XXXXXX"
+                  class="mt-2 w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary" />
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="email" class="text-sm font-semibold text-primary">Email *</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com"
+                  class="mt-2 w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary" />
+              </div>
+
+              <div>
+                <label for="interest" class="text-sm font-semibold text-primary">I am interested in</label>
+                <div class="relative mt-2">
+                  <select id="interest" name="interest"
+                    class="w-full cursor-pointer appearance-none border border-primary/20 bg-surface px-4 py-3.5 pr-10 text-sm text-primary outline-none transition-colors focus:border-secondary">
+                    <option>Buying an apartment</option>
+                    <option>Booking a site visit</option>
+                    <option>Payment plans and loans</option>
+                    <option>Something else</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[10px] text-primary/50"></i>
+                </div>
+              </div>
+
+              <div>
+                <label for="apartment" class="text-sm font-semibold text-primary">Apartment name <span class="font-normal text-primary/50">(optional)</span></label>
+                <input type="text" id="apartment" name="apartment" placeholder="e.g. Skyline Residence"
+                  class="mt-2 w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary" />
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="message" class="text-sm font-semibold text-primary">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell us a little about what you need"
+                  class="mt-2 w-full resize-y border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary"></textarea>
+              </div>
+
+            </div>
+
+            <div class="mt-8 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+              <p class="max-w-xs text-xs leading-relaxed text-primary/55">
+                We will only use your details to reply to this enquiry.
+              </p>
+              <button type="submit"
+                class="group inline-flex items-center justify-center gap-3 bg-primary px-9 py-4 text-sm font-medium text-white transition-colors duration-300 hover:bg-secondary">
+                Send message
+                <i class="fa-solid fa-arrow-right-long transition-transform duration-300 group-hover:translate-x-1.5"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact details -->
+        <div class="lg:col-span-5">
+          <h2 class="font-serif text-2xl text-primary sm:text-3xl">Visit or call us</h2>
+          <p class="mt-3 max-w-md leading-relaxed text-primary/70">
+            Prefer to talk in person? Drop by our office or give us a call, and we will be happy to walk you through the options.
+          </p>
+
+          <dl class="mt-10 divide-y divide-primary/10 border-y border-primary/10">
+            <div class="py-6">
+              <dt class="text-sm text-primary/55">Office</dt>
+              <dd class="mt-2 font-serif text-xl leading-snug text-primary">House 12, Road 5, Gulshan 2,<br />Dhaka 1212, Bangladesh</dd>
+            </div>
+            <div class="py-6">
+              <dt class="text-sm text-primary/55">Phone</dt>
+              <dd class="mt-2 font-serif text-xl text-primary"><a href="tel:+8801700000000" class="transition-colors hover:text-secondary">+880 1700 000 000</a></dd>
+            </div>
+            <div class="py-6">
+              <dt class="text-sm text-primary/55">Email</dt>
+              <dd class="mt-2 font-serif text-xl text-primary"><a href="mailto:hello@nibash.com" class="transition-colors hover:text-secondary">hello@nibash.com</a></dd>
+            </div>
+            <div class="py-6">
+              <dt class="text-sm text-primary/55">Opening hours</dt>
+              <dd class="mt-2 font-serif text-xl text-primary">Sat – Thu, 10:00 AM – 7:00 PM</dd>
+              <dd class="mt-1 text-sm text-primary/55">Closed on Fridays</dd>
+            </div>
+          </dl>
+
+          <div class="mt-8 flex items-center gap-4">
+            <p class="text-sm text-primary/55">Follow us</p>
+            <div class="flex gap-2">
+              <a href="#" aria-label="Facebook" class="flex size-10 items-center justify-center border border-primary/25 text-primary transition-colors duration-300 hover:border-primary hover:bg-primary hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram" class="flex size-10 items-center justify-center border border-primary/25 text-primary transition-colors duration-300 hover:border-primary hover:bg-primary hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn" class="flex size-10 items-center justify-center border border-primary/25 text-primary transition-colors duration-300 hover:border-primary hover:bg-primary hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://wa.me/8801700000000" aria-label="WhatsApp" class="flex size-10 items-center justify-center border border-primary/25 text-primary transition-colors duration-300 hover:border-primary hover:bg-primary hover:text-white"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="bg-canvas pb-14 lg:pb-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="overflow-hidden bg-primary/10">
+          <iframe title="Nibash office location"
+            src="https://www.google.com/maps?q=Gulshan+2,+Dhaka&output=embed"
+            class="h-[360px] w-full border-0 grayscale transition-all duration-500 hover:grayscale-0 lg:h-[460px]"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 2. index.html থেকে Footer কপি করে এখানে বসান -->
+
+  <script src="./../assets/js/preline.js"></script>
+  <script src="./../assets/js/main.js"></script>
+</body>
+</html>

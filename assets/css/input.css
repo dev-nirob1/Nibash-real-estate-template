@@ -9,4 +9,6 @@
   --color-secondary-light: #D4A98C;
   --color-canvas: #F8F5EF;
   --color-surface: #FFFFFF;
+  --font-display: "Marcellus", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
 }
