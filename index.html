@@ -330,24 +330,26 @@
         </section>
 
         <!-- Featured Apartments -->
-        <section class="bg-canvas py-20 lg:py-28">
+        <section class="bg-canvas py-20">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
                 <!-- Heading -->
-                <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-                    <div>
-                        <p
-                            class="flex items-center gap-4 text-xs font-medium uppercase tracking-[0.3em] text-secondary">
-                            <span class="h-px w-10 bg-secondary"></span>
-                            Featured Listings
-                        </p>
+                <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+                    <div class="relative">
+                        <!-- Small label with a compact accent -->
+                        <div class="flex items-center gap-3">
+                            <span class="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
+                                Featured Listings
+                            </span>
+                        </div>
+
                         <h2
-                            class="mt-4 max-w-xl font-serif text-3xl leading-tight text-primary sm:text-4xl lg:text-5xl">
-                            Handpicked apartments, ready for you.
+                            class="max-w-2xl mt-3 font-display text-3xl font-medium leading-tight tracking-tight text-primary sm:text-4xl lg:text-5xl">
+                            Find Your Next Home
                         </h2>
                     </div>
-                    <a href="apartments.html"
-                        class="group inline-flex items-center gap-3 self-start border-b border-primary pb-1 text-[12px] font-semibold uppercase tracking-[0.2em] text-primary transition-colors hover:border-secondary hover:text-secondary md:self-auto">
+                    <a href="./pages/apartments.html"
+                        class="group inline-flex items-center tracking-wide gap-2 text-primary-light transition-colors hover:text-secondary">
                         View All Apartments
                         <i
                             class="fa-solid fa-arrow-right-long transition-transform duration-300 group-hover:translate-x-1.5"></i>
@@ -359,7 +361,7 @@
 
                     <!-- Card 1 -->
                     <article
-                        class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+                        class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
                         <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
                             <img src="./assets/images/apartments/apt-1.avif" alt="Skyline Residence" loading="lazy"
                                 class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -368,21 +370,24 @@
                             <span
                                 class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">Featured</span>
                             <button type="button" aria-label="Save apartment"
-                                class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                                class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                                 <i class="fa-regular fa-heart"></i>
                             </button>
-                            <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳2.85 Crore</p>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-serif text-xl text-primary">
-                                <a href="apartment-details.html" class="transition-colors hover:text-secondary">Skyline
-                                    Residence</a>
-                            </h3>
+                        <div class="p-4">
+                            <a href="./pages/apartment-details.html"
+                                class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                                <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                                    Skyline
+                                    Residence</p>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                            </a>
                             <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
                                 <i class="fa-solid fa-location-dot text-secondary"></i> Gulshan 2, Dhaka
                             </p>
                             <ul
-                                class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
+                                class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
                                 <li><i class="fa-solid fa-bed text-secondary"></i>
                                     <p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p>
                                 </li>
@@ -398,7 +403,7 @@
 
                     <!-- Card 2 -->
                     <article
-                        class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+                        class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
                         <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
                             <img src="./assets/images/apartments/apt-2.avif" alt="Lakeview Heights" loading="lazy"
                                 class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -407,21 +412,25 @@
                             <span
                                 class="absolute left-0 top-5 bg-primary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">New</span>
                             <button type="button" aria-label="Save apartment"
-                                class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                                class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                                 <i class="fa-regular fa-heart"></i>
                             </button>
-                            <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳1.95 Crore</p>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-serif text-xl text-primary">
-                                <a href="apartment-details.html" class="transition-colors hover:text-secondary">Lakeview
-                                    Heights</a>
-                            </h3>
+                        <div class="p-4">
+                            <a href="./pages/apartment-details.html"
+                                class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                                <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                                    Lakeview
+                                    Heights</p>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                            </a>
+
                             <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
                                 <i class="fa-solid fa-location-dot text-secondary"></i> Banani, Dhaka
                             </p>
                             <ul
-                                class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
+                                class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
                                 <li><i class="fa-solid fa-bed text-secondary"></i>
                                     <p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p>
                                 </li>
@@ -437,7 +446,7 @@
 
                     <!-- Card 3 -->
                     <article
-                        class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+                        class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
                         <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
                             <img src="./assets/images/apartments/apt-3.avif" alt="The Orchard" loading="lazy"
                                 class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -447,21 +456,26 @@
                                 class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">Hot
                                 Deal</span>
                             <button type="button" aria-label="Save apartment"
-                                class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                                class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                                 <i class="fa-regular fa-heart"></i>
                             </button>
-                            <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳1.40 Crore</p>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-serif text-xl text-primary">
-                                <a href="apartment-details.html" class="transition-colors hover:text-secondary">The
-                                    Orchard</a>
-                            </h3>
+                        <div class="p-4">
+
+
+                            <a href="./pages/apartment-details.html"
+                                class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                                <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">The
+                                    Orchard</p>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                            </a>
+
                             <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
                                 <i class="fa-solid fa-location-dot text-secondary"></i> Dhanmondi, Dhaka
                             </p>
                             <ul
-                                class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
+                                class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
                                 <li><i class="fa-solid fa-bed text-secondary"></i>
                                     <p class="mt-1.5 text-sm font-medium text-primary">2 Beds</p>
                                 </li>
@@ -477,7 +491,7 @@
 
                     <!-- Card 4 -->
                     <article
-                        class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+                        class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
                         <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
                             <img src="./assets/images/apartments/apt-4.avif" alt="Marina Court" loading="lazy"
                                 class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -486,21 +500,24 @@
                             <span
                                 class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">Featured</span>
                             <button type="button" aria-label="Save apartment"
-                                class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                                class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                                 <i class="fa-regular fa-heart"></i>
                             </button>
-                            <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳1.15 Crore</p>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-serif text-xl text-primary">
-                                <a href="apartment-details.html" class="transition-colors hover:text-secondary">Marina
-                                    Court</a>
-                            </h3>
+                        <div class="p-4">
+                            <a href="./pages/apartment-details.html"
+                                class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                                <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                                    Marina
+                                    Court</p>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                            </a>
                             <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
                                 <i class="fa-solid fa-location-dot text-secondary"></i> Bashundhara R/A, Dhaka
                             </p>
                             <ul
-                                class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
+                                class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
                                 <li><i class="fa-solid fa-bed text-secondary"></i>
                                     <p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p>
                                 </li>
@@ -516,7 +533,7 @@
 
                     <!-- Card 5 -->
                     <article
-                        class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+                        class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
                         <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
                             <img src="./assets/images/apartments/apt-2.avif" alt="Cedar Park Residence" loading="lazy"
                                 class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -525,21 +542,25 @@
                             <span
                                 class="absolute left-0 top-5 bg-primary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">New</span>
                             <button type="button" aria-label="Save apartment"
-                                class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                                class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                                 <i class="fa-regular fa-heart"></i>
                             </button>
-                            <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳85 Lac</p>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-serif text-xl text-primary">
-                                <a href="apartment-details.html" class="transition-colors hover:text-secondary">Cedar
-                                    Park Residence</a>
-                            </h3>
+                        <div class="p-4">
+                            <a href="./pages/apartment-details.html"
+                                class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                                <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                                    Cedar
+                                    Park Residence</p>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                            </a>
+
                             <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
                                 <i class="fa-solid fa-location-dot text-secondary"></i> Uttara, Dhaka
                             </p>
                             <ul
-                                class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
+                                class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
                                 <li><i class="fa-solid fa-bed text-secondary"></i>
                                     <p class="mt-1.5 text-sm font-medium text-primary">2 Beds</p>
                                 </li>
@@ -555,7 +576,7 @@
 
                     <!-- Card 6 -->
                     <article
-                        class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+                        class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
                         <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
                             <img src="./assets/images/apartments/apt-3.avif" alt="Crown Tower Penthouse" loading="lazy"
                                 class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -564,21 +585,26 @@
                             <span
                                 class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">Featured</span>
                             <button type="button" aria-label="Save apartment"
-                                class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                                class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                                 <i class="fa-regular fa-heart"></i>
                             </button>
-                            <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳4.50 Crore</p>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-serif text-xl text-primary">
-                                <a href="apartment-details.html" class="transition-colors hover:text-secondary">Crown
-                                    Tower Penthouse</a>
-                            </h3>
+                        <div class="p-4">
+
+                            <a href="./pages/apartment-details.html"
+                                class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                                <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                                    Crown
+                                    Tower Penthouse</p>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                            </a>
+
                             <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
                                 <i class="fa-solid fa-location-dot text-secondary"></i> Gulshan 1, Dhaka
                             </p>
                             <ul
-                                class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
+                                class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
                                 <li><i class="fa-solid fa-bed text-secondary"></i>
                                     <p class="mt-1.5 text-sm font-medium text-primary">4 Beds</p>
                                 </li>
