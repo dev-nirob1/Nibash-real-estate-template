@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./assets/css/output.css" />
 </head>
 
-<body class="bg-canvas text-primary antialiased">
+<body class="bg-canvas font-sans text-primary antialiased">
 
     <!-- Top info bar (desktop only) -->
     <div class="hidden bg-primary text-white/80 lg:block">
@@ -59,31 +59,31 @@
             <!-- Desktop menu -->
             <ul class="hidden items-center gap-10 lg:flex">
                 <li>
-                    <a href="index.html"
+                    <a href="./index.html"
                         class="relative py-1 text-[13px] font-medium uppercase tracking-[0.16em] text-secondary-dark after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-full after:bg-secondary">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="apartments.html"
+                    <a href="./pages/apartments.html"
                         class="relative py-1 text-[13px] font-medium uppercase tracking-[0.16em] text-primary transition hover:text-secondary-dark after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">
                         Apartments
                     </a>
                 </li>
                 <li>
-                    <a href="about.html"
+                    <a href="./pages/about.html"
                         class="relative py-1 text-[13px] font-medium uppercase tracking-[0.16em] text-primary transition hover:text-secondary-dark after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">
                         About
                     </a>
                 </li>
                 <li>
-                    <a href="agents.html"
+                    <a href="./pages/agents.html"
                         class="relative py-1 text-[13px] font-medium uppercase tracking-[0.16em] text-primary transition hover:text-secondary-dark after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">
                         Agents
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html"
+                    <a href="./pages/contact.html"
                         class="relative py-1 text-[13px] font-medium uppercase tracking-[0.16em] text-primary transition hover:text-secondary-dark after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">
                         Contact
                     </a>
@@ -91,23 +91,18 @@
             </ul>
 
             <!-- Desktop CTA -->
-            <a href="contact.html"
-                class="hidden items-center gap-3 bg-primary px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-secondary lg:inline-flex">
-                Book a Visit
-                <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                </svg>
+            <a href="./pages/contact.html"
+                class="group bg-primary relative hidden lg:inline-flex items-center justify-center gap-3 overflow-hidden border border-white/60 px-9 py-4 text-[12px] font-semibold uppercase tracking-[0.2em] text-white transition-colors duration-300 before:absolute before:inset-0 before:origin-left before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:text-primary hover:before:scale-x-100">
+                <span class="relative">Book a Visit</span>
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
             <!-- Mobile sidebar toggle -->
             <button type="button"
-                class="flex size-11 flex-col items-center justify-center gap-1.5 border border-primary/30 text-primary transition hover:bg-primary hover:text-white lg:hidden"
+                class="flex size-10 text-xl items-center justify-center border border-primary/30 text-primary transition hover:bg-primary hover:text-white lg:hidden"
                 aria-haspopup="dialog" aria-expanded="false" aria-controls="mobile-sidebar" aria-label="Open menu"
                 data-hs-overlay="#mobile-sidebar">
-                <span class="block h-px w-5 bg-current"></span>
-                <span class="block h-px w-5 bg-current"></span>
-                <span class="mr-3 block h-px w-3 self-end bg-current"></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
 
         </nav>
@@ -128,49 +123,41 @@
                         class="font-serif text-lg font-semibold uppercase tracking-[0.22em] text-primary">Nibash</span>
                 </a>
                 <button type="button"
-                    class="flex size-10 items-center justify-center border border-primary/30 text-primary transition hover:bg-primary hover:text-white"
+                    class="flex items-center size-10 text-xl justify-center border border-primary/30 text-primary transition hover:bg-primary hover:text-white"
                     aria-label="Close menu" data-hs-overlay="#mobile-sidebar">
-                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+                    <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
 
             <!-- Sidebar links -->
             <nav class="flex-1 overflow-y-auto px-6 py-6">
                 <ul>
-                    <li class="border-b border-primary/10">
-                        <a href="index.html" class="flex items-baseline gap-4 py-5 text-secondary-dark">
-                            <span class="text-xs tracking-widest text-secondary">01</span>
+                    <li>
+                        <a href="index.html" class="flex items-baseline gap-4 py-2 text-secondary-dark">
                             <span class="font-serif text-2xl">Home</span>
                         </a>
                     </li>
-                    <li class="border-b border-primary/10">
+                    <li>
                         <a href="apartments.html"
-                            class="flex items-baseline gap-4 py-5 text-primary transition hover:text-secondary-dark">
-                            <span class="text-xs tracking-widest text-secondary">02</span>
+                            class="flex items-baseline gap-4 py-2 text-primary transition hover:text-secondary-dark">
                             <span class="font-serif text-2xl">Apartments</span>
                         </a>
                     </li>
-                    <li class="border-b border-primary/10">
+                    <li>
                         <a href="about.html"
-                            class="flex items-baseline gap-4 py-5 text-primary transition hover:text-secondary-dark">
-                            <span class="text-xs tracking-widest text-secondary">03</span>
+                            class="flex items-baseline gap-4 py-2 text-primary transition hover:text-secondary-dark">
                             <span class="font-serif text-2xl">About</span>
                         </a>
                     </li>
-                    <li class="border-b border-primary/10">
+                    <li>
                         <a href="agents.html"
-                            class="flex items-baseline gap-4 py-5 text-primary transition hover:text-secondary-dark">
-                            <span class="text-xs tracking-widest text-secondary">04</span>
+                            class="flex items-baseline gap-4 py-2 text-primary transition hover:text-secondary-dark">
                             <span class="font-serif text-2xl">Agents</span>
                         </a>
                     </li>
-                    <li class="border-b border-primary/10">
+                    <li>
                         <a href="contact.html"
-                            class="flex items-baseline gap-4 py-5 text-primary transition hover:text-secondary-dark">
-                            <span class="text-xs tracking-widest text-secondary">05</span>
+                            class="flex items-baseline gap-4 py-2 text-primary transition hover:text-secondary-dark">
                             <span class="font-serif text-2xl">Contact</span>
                         </a>
                     </li>
@@ -204,19 +191,18 @@
                 <div class="absolute inset-0 bg-linear-to-r from-primary/95 via-primary/65 to-primary/20"></div>
                 <div class="absolute inset-0 bg-linear-to-t from-primary/60 via-transparent to-transparent"></div>
 
-                <div class="relative mx-auto w-full max-w-7xl px-4 pb-32 pt-16 sm:px-6 lg:px-8">
+                <div class="relative mx-auto w-full max-w-6xl px-4 pb-32 pt-16 sm:px-6 lg:px-0">
 
-                    <p
-                        class="flex items-center gap-4 text-xs font-medium uppercase tracking-[0.3em] text-secondary-light">
-                        <span class="h-px w-12 bg-secondary-light"></span>
-                        Premium Apartments for Sale
+                    <p class="text-sm font-medium tracking-wide text-secondary-light">
+                        A better way to find your place.
                     </p>
 
-                    <h1 class="mt-6 max-w-3xl font-serif text-4xl leading-[1.1] text-white sm:text-5xl lg:text-7xl">
-                        Find a home that feels <em class="text-secondary-light">truly yours.</em>
+                    <h1
+                        class="mt-6 max-w-3xl text-4xl font-display leading-[1.1] text-white sm:text-5xl lg:text-6xl font-bold">
+                        Find a home that feels truly yours.
                     </h1>
 
-                    <p class="mt-7 max-w-xl text-base leading-relaxed text-white/75 lg:text-lg">
+                    <p class="mt-7 max-w-xl text-base leading-relaxed text-white opacity-20 lg:text-lg">
                         Handpicked apartments in the city's most desirable neighbourhoods, with honest guidance from the
                         first visit to the day you get your keys.
                     </p>
@@ -237,33 +223,24 @@
                             <span class="relative">Talk to an Agent</span>
                         </a>
                     </div>
-
-                    <!-- Trust points -->
-                    <ul class="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/80">
-                        <li class="flex items-center gap-2.5"><i
-                                class="fa-solid fa-circle-check text-secondary-light"></i> Verified listings</li>
-                        <li class="flex items-center gap-2.5"><i
-                                class="fa-solid fa-circle-check text-secondary-light"></i> Legal support</li>
-                        <li class="flex items-center gap-2.5"><i
-                                class="fa-solid fa-circle-check text-secondary-light"></i> Easy installments</li>
-                    </ul>
-
                 </div>
             </div>
 
-            <!-- Search bar -->
-            <div class="relative z-10 mx-auto -mt-14 max-w-6xl px-4 pb-20 sm:px-6 lg:px-8">
+            <!-- Property search: consistent outer border and subtle dividers -->
+            <div class="relative z-10 mx-auto bg-surface py-8 -mt-14 max-w-6xl px-4 sm:px-6 lg:px-8">
                 <form
-                    class="grid grid-cols-1 gap-px border-t-2 border-secondary bg-primary/10 shadow-2xl shadow-primary/25 sm:grid-cols-2 lg:grid-cols-5">
+                    class="grid grid-cols-1 overflow-hidden border-t-secondary bg-surface shadow-xl shadow-primary/10 sm:grid-cols-2 lg:grid-cols-5">
 
-                    <div class="bg-surface px-6 py-5 transition-colors hover:bg-canvas">
+                    <!-- Location -->
+                    <div class=" px-5 py-3 transition-colors duration-200 hover:bg-canvas sm:px-6">
                         <label for="location"
-                            class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-secondary">
-                            <i class="fa-solid fa-location-dot"></i> Location
+                            class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.15em] text-secondary">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Location
                         </label>
-                        <div class="relative mt-2.5">
+                        <div class="relative mt-3">
                             <select id="location" name="location"
-                                class="w-full cursor-pointer appearance-none bg-transparent pr-6 text-sm font-medium text-primary outline-none">
+                                class="w-full cursor-pointer appearance-none bg-transparent p-2 text-sm font-medium text-primary outline-none">
                                 <option value="">Any location</option>
                                 <option>Gulshan</option>
                                 <option>Banani</option>
@@ -276,14 +253,16 @@
                         </div>
                     </div>
 
-                    <div class="bg-surface px-6 py-5 transition-colors hover:bg-canvas">
+                    <!-- Property type -->
+                    <div class=" px-5 py-3 transition-colors duration-200 hover:bg-canvas sm:px-6">
                         <label for="type"
-                            class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-secondary">
-                            <i class="fa-regular fa-building"></i> Property Type
+                            class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.15em] text-secondary">
+                            <i class="fa-regular fa-building"></i>
+                            Property Type
                         </label>
-                        <div class="relative mt-2.5">
+                        <div class="relative mt-3">
                             <select id="type" name="type"
-                                class="w-full cursor-pointer appearance-none bg-transparent pr-6 text-sm font-medium text-primary outline-none">
+                                class="w-full cursor-pointer appearance-none bg-transparent p-2 text-sm font-medium text-primary outline-none">
                                 <option value="">All types</option>
                                 <option>Apartment</option>
                                 <option>Duplex</option>
@@ -295,14 +274,16 @@
                         </div>
                     </div>
 
-                    <div class="bg-surface px-6 py-5 transition-colors hover:bg-canvas">
+                    <!-- Bedrooms -->
+                    <div class=" px-5 py-3 transition-colors duration-200 hover:bg-canvas sm:px-6">
                         <label for="bedrooms"
-                            class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-secondary">
-                            <i class="fa-solid fa-bed"></i> Bedrooms
+                            class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.15em] text-secondary">
+                            <i class="fa-solid fa-bed"></i>
+                            Bedrooms
                         </label>
-                        <div class="relative mt-2.5">
+                        <div class="relative mt-3">
                             <select id="bedrooms" name="bedrooms"
-                                class="w-full cursor-pointer appearance-none bg-transparent pr-6 text-sm font-medium text-primary outline-none">
+                                class="w-full cursor-pointer appearance-none bg-transparent p-2 text-sm font-medium text-primary outline-none">
                                 <option value="">Any</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -314,14 +295,16 @@
                         </div>
                     </div>
 
-                    <div class="bg-surface px-6 py-5 transition-colors hover:bg-canvas">
+                    <!-- Budget -->
+                    <div class=" px-5 py-3 transition-colors duration-200 hover:bg-canvas sm:px-6">
                         <label for="budget"
-                            class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-secondary">
-                            <i class="fa-solid fa-wallet"></i> Budget
+                            class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.15em] text-secondary">
+                            <i class="fa-solid fa-wallet"></i>
+                            Budget
                         </label>
-                        <div class="relative mt-2.5">
+                        <div class="relative mt-3">
                             <select id="budget" name="budget"
-                                class="w-full cursor-pointer appearance-none bg-transparent pr-6 text-sm font-medium text-primary outline-none">
+                                class="w-full cursor-pointer appearance-none bg-transparent p-2 text-sm font-medium text-primary outline-none">
                                 <option value="">Any budget</option>
                                 <option>Under 50 Lac</option>
                                 <option>50 Lac – 1 Crore</option>
@@ -333,9 +316,11 @@
                         </div>
                     </div>
 
-                    <button
-                        class="group flex items-center justify-center gap-3 bg-primary px-6 py-5 text-[12px] font-semibold uppercase tracking-[0.2em] text-white transition-colors duration-300 hover:bg-secondary sm:col-span-2 lg:col-span-1">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- Search action -->
+                    <button type="submit"
+                        class="group text-sm cursor-pointer flex items-center justify-center gap-3 bg-primary px-6 py-3  font-semibold uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-secondary sm:col-span-2 lg:col-span-1">
+                        <i
+                            class="fa-solid fa-magnifying-glass transition-transform duration-300 group-hover:scale-110"></i>
                         Search
                     </button>
 
@@ -343,7 +328,6 @@
             </div>
 
         </section>
-        <!-- Featured Apartments -->
 
         <!-- Featured Apartments -->
         <section class="bg-canvas py-20 lg:py-28">
