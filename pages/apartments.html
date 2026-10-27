@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,149 +12,327 @@
 
 <body id="top" class="bg-canvas text-primary antialiased">
 
-  <!-- 1. index.html থেকে Top info bar, Main navbar আর Mobile sidebar কপি করে এখানে বসান -->
+  <!-- Top info bar (desktop only) -->
+  <div class="hidden bg-primary text-white/80 lg:block">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-8 py-2.5 text-xs uppercase tracking-[0.14em]">
+      <div class="flex items-center gap-8">
+        <a href="tel:+8801700000000" class="flex items-center gap-2 transition hover:text-white">
+          <svg class="size-3.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106a1.125 1.125 0 00-1.173.417l-.97 1.293a1.125 1.125 0 01-1.21.38 12.035 12.035 0 01-7.143-7.143 1.125 1.125 0 01.38-1.21l1.293-.97c.37-.277.54-.75.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+          </svg>
+          +880 1700 000 000
+        </a>
+        <a href="mailto:hello@nibash.com" class="flex items-center gap-2 transition hover:text-white">
+          <svg class="size-3.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          hello@nibash.com
+        </a>
+      </div>
+      <p>Sat – Thu &nbsp;·&nbsp; 10:00 AM – 7:00 PM</p>
+    </div>
+  </div>
+
+  <!-- Main navbar -->
+  <header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-canvas/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8 lg:py-5">
+
+      <!-- Logo -->
+      <a href="./../index.html" class="flex items-center gap-3">
+        <span class="flex size-10 items-center justify-center bg-primary font-serif text-xl text-white">N</span>
+        <span class="flex flex-col leading-none">
+          <span class="font-serif text-xl font-semibold uppercase tracking-[0.22em] text-primary">Nibash</span>
+          <span class="mt-1 text-[10px] uppercase tracking-[0.3em] text-secondary">Real Estate</span>
+        </span>
+      </a>
+
+      <!-- Desktop menu -->
+      <ul class="hidden items-center gap-10 lg:flex">
+        <li>
+          <a href="./../index.html"
+            class="relative py-1 text-[13px] font-medium uppercase tracking-[0.16em] text-secondary-dark after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-full after:bg-secondary">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="./../pages/apartments.html"
+            class="relative py-1 text-[13px] font-medium uppercase tracking-[0.16em] text-primary transition hover:text-secondary-dark after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">
+            Apartments
+          </a>
+        </li>
+        <li>
+          <a href="./../pages/about.html"
+            class="relative py-1 text-[13px] font-medium uppercase tracking-[0.16em] text-primary transition hover:text-secondary-dark after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="./../pages/agents.html"
+            class="relative py-1 text-[13px] font-medium uppercase tracking-[0.16em] text-primary transition hover:text-secondary-dark after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">
+            Agents
+          </a>
+        </li>
+        <li>
+          <a href="./../pages/contact.html"
+            class="relative py-1 text-[13px] font-medium uppercase tracking-[0.16em] text-primary transition hover:text-secondary-dark after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <a href="./../pages/contact.html"
+        class="group bg-primary relative hidden lg:inline-flex items-center justify-center gap-3 overflow-hidden border border-white/60 px-9 py-4 text-[12px] font-semibold uppercase tracking-[0.2em] text-white transition-colors duration-300 before:absolute before:inset-0 before:origin-left before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:text-primary hover:before:scale-x-100">
+        <span class="relative">Book a Visit</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+      <!-- Mobile sidebar toggle -->
+      <button type="button"
+        class="flex size-10 text-xl items-center justify-center border border-primary/30 text-primary transition hover:bg-primary hover:text-white lg:hidden"
+        aria-haspopup="dialog" aria-expanded="false" aria-controls="mobile-sidebar" aria-label="Open menu"
+        data-hs-overlay="#mobile-sidebar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- Mobile sidebar -->
+  <div id="mobile-sidebar"
+    class="bg-surface hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 end-0 z-80 h-full w-full max-w-sm transform bg-canvas transition-all duration-300"
+    role="dialog" tabindex="-1" aria-labelledby="mobile-sidebar-label">
+    <div class="flex h-full flex-col">
+
+      <!-- Sidebar header -->
+      <div class="flex items-center justify-between border-b border-primary/10 px-6 py-5">
+        <a href="./../index.html" id="mobile-sidebar-label" class="flex items-center gap-3">
+          <span class="flex size-9 items-center justify-center bg-primary font-serif text-lg text-white">N</span>
+          <span class="font-serif text-lg font-semibold uppercase tracking-[0.22em] text-primary">Nibash</span>
+        </a>
+        <button type="button"
+          class="flex items-center size-10 text-xl justify-center border border-primary/30 text-primary transition hover:bg-primary hover:text-white"
+          aria-label="Close menu" data-hs-overlay="#mobile-sidebar">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Sidebar links -->
+      <nav class="flex-1 overflow-y-auto px-6 py-6">
+        <ul>
+          <li>
+            <a href="./../index.html" class="flex items-baseline gap-4 py-2 text-secondary-dark">
+              <span class="font-serif text-2xl">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="./../pages/apartments.html"
+              class="flex items-baseline gap-4 py-2 text-primary transition hover:text-secondary-dark">
+              <span class="font-serif text-2xl">Apartments</span>
+            </a>
+          </li>
+          <li>
+            <a href="./../pages/about.html"
+              class="flex items-baseline gap-4 py-2 text-primary transition hover:text-secondary-dark">
+              <span class="font-serif text-2xl">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="./../pages/agents.html"
+              class="flex items-baseline gap-4 py-2 text-primary transition hover:text-secondary-dark">
+              <span class="font-serif text-2xl">Agents</span>
+            </a>
+          </li>
+          <li>
+            <a href="./../pages/contact.html"
+              class="flex items-baseline gap-4 py-2 text-primary transition hover:text-secondary-dark">
+              <span class="font-serif text-2xl">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar footer -->
+      <div class="border-t border-primary/10 bg-surface px-6 py-6">
+        <p class="text-[11px] uppercase tracking-[0.25em] text-secondary">Get in touch</p>
+        <a href="tel:+8801700000000" class="mt-3 block font-serif text-xl text-primary">+880 1700 000 000</a>
+        <a href="mailto:hello@nibash.com" class="mt-1 block text-sm text-primary/70">hello@nibash.com</a>
+        <a href="./contact.html"
+          class="mt-5 flex items-center justify-center bg-primary px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-secondary">
+          Book a Visit
+        </a>
+      </div>
+
+    </div>
+  </div>
 
   <main>
 
+
     <!-- Page header -->
-    <section class="border-b border-primary/10 bg-canvas">
-      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-        <nav aria-label="Breadcrumb" class="text-sm text-primary/60">
-          <a href="index.html" class="transition-colors hover:text-secondary-dark">Home</a>
+    <section class="relative flex min-h-[260px] items-center bg-primary lg:min-h-[340px]">
+      <img src="./../assets/images/hero/hero-1.avif" alt="" class="absolute inset-0 size-full object-cover" />
+      <div class="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/70 to-primary/30"></div>
+
+      <div class="relative mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <nav aria-label="Breadcrumb" class="text-sm text-white/70">
+          <a href="index.html" class="transition-colors hover:text-white">Home</a>
           <span class="mx-2">/</span>
-          <span class="text-primary">Apartments</span>
+          <span class="text-white">Apartments</span>
         </nav>
-        <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <h1 class="font-serif text-4xl leading-[1.05] text-primary sm:text-5xl lg:text-6xl">Apartments for sale</h1>
-          <p class="max-w-md leading-relaxed text-primary/70">
-            Browse our current listings and narrow them down by location, price and size until you find the right fit.
-          </p>
-        </div>
+        <h1 class="mt-5 font-serif text-4xl leading-[1.05] text-white sm:text-5xl lg:text-6xl">Apartments for sale</h1>
       </div>
     </section>
 
     <!-- Listing -->
     <section class="bg-canvas py-12 lg:py-16">
-      <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
 
         <!-- Filters (sidebar on desktop, drawer on mobile) -->
         <aside id="filters"
           class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 start-0 bottom-0 z-80 w-80 max-w-full transform overflow-y-auto bg-canvas transition-all duration-300 [--auto-close:lg] lg:static lg:z-auto lg:col-span-3 lg:block lg:w-auto lg:translate-x-0 lg:overflow-visible lg:bg-transparent"
           role="dialog" tabindex="-1" aria-label="Filters">
 
-          <form action="apartments.html" method="get"
-            class="flex flex-col gap-7 p-6 lg:sticky lg:top-28 lg:border lg:border-primary/10 lg:bg-surface">
+          <!-- Scroll wrapper (sticky + fixed max height on desktop) -->
+          <div
+            class="lg:sticky lg:top-28 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:border lg:border-primary/10 lg:bg-surface [scrollbar-width:thin]">
 
-            <div class="flex items-center justify-between">
-              <h2 class="font-serif text-2xl text-primary">Filters</h2>
-              <button type="button" aria-label="Close filters"
-                class="flex size-9 items-center justify-center border border-primary/30 text-primary lg:hidden"
-                data-hs-overlay="#filters">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
+            <form action="apartments.html" method="get" class="flex flex-col gap-7 p-6">
 
-            <!-- Keyword -->
-            <div>
-              <label for="keyword" class="text-sm font-semibold text-primary">Search</label>
-              <div class="relative mt-3">
-                <input type="text" id="keyword" name="keyword" placeholder="Name or area"
-                  class="w-full border border-primary/20 bg-surface py-3 pl-4 pr-10 text-sm text-primary outline-none placeholder:text-primary/40 focus:border-secondary" />
-                <i class="fa-solid fa-magnifying-glass pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-primary/40"></i>
+              <div
+                class="sticky lg:static top-0 z-10 -mx-6 -mt-6 flex items-center justify-between border-b border-primary/10 bg-canvas px-6 py-4 lg:bg-surface">
+                <h2 class="font-serif text-2xl text-primary">Filters</h2>
+                <button type="button" aria-label="Close filters"
+                  class="flex size-9 items-center justify-center border border-primary/30 text-primary lg:hidden"
+                  data-hs-overlay="#filters">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
               </div>
-            </div>
 
-            <!-- Location -->
-            <div class="border-t border-primary/10 pt-6">
-              <label for="f-location" class="text-sm font-semibold text-primary">Location</label>
-              <div class="relative mt-3">
-                <select id="f-location" name="location"
-                  class="w-full cursor-pointer appearance-none border border-primary/20 bg-surface px-4 py-3 pr-10 text-sm text-primary outline-none focus:border-secondary">
-                  <option value="">Any location</option>
-                  <option>Gulshan</option>
-                  <option>Banani</option>
-                  <option>Dhanmondi</option>
-                  <option>Bashundhara R/A</option>
-                  <option>Uttara</option>
-                  <option>Baridhara</option>
-                </select>
-                <i class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[10px] text-primary/50"></i>
+              <!-- Keyword -->
+              <div>
+                <label for="keyword" class="text-sm font-semibold text-primary">Search</label>
+                <div class="relative mt-3">
+                  <input type="text" id="keyword" name="keyword" placeholder="Name or area"
+                    class="w-full border border-primary/20 bg-surface py-3 pl-4 pr-10 text-sm text-primary outline-none placeholder:text-primary/40 focus:border-secondary" />
+                  <i
+                    class="fa-solid fa-magnifying-glass pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-primary/40"></i>
+                </div>
               </div>
-            </div>
 
-            <!-- Property type -->
-            <div class="border-t border-primary/10 pt-6">
-              <p class="text-sm font-semibold text-primary">Property type</p>
-              <div class="mt-3 space-y-3 text-sm text-primary/80">
-                <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="type" value="Apartment" class="size-4 accent-secondary" /> Apartment</label>
-                <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="type" value="Duplex" class="size-4 accent-secondary" /> Duplex</label>
-                <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="type" value="Penthouse" class="size-4 accent-secondary" /> Penthouse</label>
-                <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="type" value="Studio" class="size-4 accent-secondary" /> Studio</label>
+              <!-- Location -->
+              <div class="border-t border-primary/10 pt-6">
+                <label for="f-location" class="text-sm font-semibold text-primary">Location</label>
+                <div class="relative mt-3">
+                  <select id="f-location" name="location"
+                    class="w-full cursor-pointer appearance-none border border-primary/20 bg-surface px-4 py-3 pr-10 text-sm text-primary outline-none focus:border-secondary">
+                    <option value="">Any location</option>
+                    <option>Gulshan</option>
+                    <option>Banani</option>
+                    <option>Dhanmondi</option>
+                    <option>Bashundhara R/A</option>
+                    <option>Uttara</option>
+                    <option>Baridhara</option>
+                  </select>
+                  <i
+                    class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[10px] text-primary/50"></i>
+                </div>
               </div>
-            </div>
 
-            <!-- Price -->
-            <div class="border-t border-primary/10 pt-6">
-              <p class="text-sm font-semibold text-primary">Price (in Lac)</p>
-              <div class="mt-3 grid grid-cols-2 gap-3">
-                <input type="number" name="min_price" min="0" placeholder="Min" aria-label="Minimum price"
-                  class="w-full border border-primary/20 bg-surface px-4 py-3 text-sm text-primary outline-none placeholder:text-primary/40 focus:border-secondary" />
-                <input type="number" name="max_price" min="0" placeholder="Max" aria-label="Maximum price"
-                  class="w-full border border-primary/20 bg-surface px-4 py-3 text-sm text-primary outline-none placeholder:text-primary/40 focus:border-secondary" />
+              <!-- Property type -->
+              <div class="border-t border-primary/10 pt-6">
+                <p class="text-sm font-semibold text-primary">Property type</p>
+                <div class="mt-3 space-y-3 text-sm text-primary/80">
+                  <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="type"
+                      value="Apartment" class="size-4 accent-secondary" /> Apartment</label>
+                  <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="type"
+                      value="Duplex" class="size-4 accent-secondary" /> Duplex</label>
+                  <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="type"
+                      value="Penthouse" class="size-4 accent-secondary" /> Penthouse</label>
+                  <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="type"
+                      value="Studio" class="size-4 accent-secondary" /> Studio</label>
+                </div>
               </div>
-            </div>
 
-            <!-- Bedrooms -->
-            <div class="border-t border-primary/10 pt-6">
-              <p class="text-sm font-semibold text-primary">Bedrooms</p>
-              <div class="mt-3 grid grid-cols-5 gap-2">
-                <label class="cursor-pointer">
-                  <input type="radio" name="bedrooms" value="" class="peer sr-only" checked />
-                  <span class="flex h-10 items-center justify-center border border-primary/20 text-sm text-primary transition-colors peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">Any</span>
-                </label>
-                <label class="cursor-pointer">
-                  <input type="radio" name="bedrooms" value="1" class="peer sr-only" />
-                  <span class="flex h-10 items-center justify-center border border-primary/20 text-sm text-primary transition-colors peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">1</span>
-                </label>
-                <label class="cursor-pointer">
-                  <input type="radio" name="bedrooms" value="2" class="peer sr-only" />
-                  <span class="flex h-10 items-center justify-center border border-primary/20 text-sm text-primary transition-colors peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">2</span>
-                </label>
-                <label class="cursor-pointer">
-                  <input type="radio" name="bedrooms" value="3" class="peer sr-only" />
-                  <span class="flex h-10 items-center justify-center border border-primary/20 text-sm text-primary transition-colors peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">3</span>
-                </label>
-                <label class="cursor-pointer">
-                  <input type="radio" name="bedrooms" value="4+" class="peer sr-only" />
-                  <span class="flex h-10 items-center justify-center border border-primary/20 text-sm text-primary transition-colors peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">4+</span>
-                </label>
+              <!-- Price -->
+              <div class="border-t border-primary/10 pt-6">
+                <p class="text-sm font-semibold text-primary">Price (in Lac)</p>
+                <div class="mt-3 grid grid-cols-2 gap-3">
+                  <input type="number" name="min_price" min="0" placeholder="Min" aria-label="Minimum price"
+                    class="w-full border border-primary/20 bg-surface px-4 py-3 text-sm text-primary outline-none placeholder:text-primary/40 focus:border-secondary" />
+                  <input type="number" name="max_price" min="0" placeholder="Max" aria-label="Maximum price"
+                    class="w-full border border-primary/20 bg-surface px-4 py-3 text-sm text-primary outline-none placeholder:text-primary/40 focus:border-secondary" />
+                </div>
               </div>
-            </div>
 
-            <!-- Amenities -->
-            <div class="border-t border-primary/10 pt-6">
-              <p class="text-sm font-semibold text-primary">Amenities</p>
-              <div class="mt-3 space-y-3 text-sm text-primary/80">
-                <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="amenities" value="Lift" class="size-4 accent-secondary" /> Lift</label>
-                <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="amenities" value="Parking" class="size-4 accent-secondary" /> Car parking</label>
-                <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="amenities" value="Generator" class="size-4 accent-secondary" /> Generator backup</label>
-                <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="amenities" value="Gym" class="size-4 accent-secondary" /> Gym</label>
-                <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="amenities" value="Rooftop" class="size-4 accent-secondary" /> Rooftop</label>
+              <!-- Bedrooms -->
+              <div class="border-t border-primary/10 pt-6">
+                <p class="text-sm font-semibold text-primary">Bedrooms</p>
+                <div class="mt-3 grid grid-cols-5 gap-2">
+                  <label class="cursor-pointer">
+                    <input type="radio" name="bedrooms" value="" class="peer sr-only" checked />
+                    <span
+                      class="flex h-10 items-center justify-center border border-primary/20 text-sm text-primary transition-colors peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">Any</span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input type="radio" name="bedrooms" value="1" class="peer sr-only" />
+                    <span
+                      class="flex h-10 items-center justify-center border border-primary/20 text-sm text-primary transition-colors peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">1</span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input type="radio" name="bedrooms" value="2" class="peer sr-only" />
+                    <span
+                      class="flex h-10 items-center justify-center border border-primary/20 text-sm text-primary transition-colors peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">2</span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input type="radio" name="bedrooms" value="3" class="peer sr-only" />
+                    <span
+                      class="flex h-10 items-center justify-center border border-primary/20 text-sm text-primary transition-colors peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">3</span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input type="radio" name="bedrooms" value="4+" class="peer sr-only" />
+                    <span
+                      class="flex h-10 items-center justify-center border border-primary/20 text-sm text-primary transition-colors peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">4+</span>
+                  </label>
+                </div>
               </div>
-            </div>
 
-            <!-- Actions -->
-            <div class="flex flex-col gap-3 border-t border-primary/10 pt-6">
-              <button type="submit"
-                class="bg-primary px-6 py-3.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-secondary">
-                Apply filters
-              </button>
-              <button type="reset" class="text-sm text-primary/60 underline underline-offset-4 transition-colors hover:text-primary">
-                Reset all
-              </button>
-            </div>
+              <!-- Amenities -->
+              <div class="border-t border-primary/10 pt-6">
+                <p class="text-sm font-semibold text-primary">Amenities</p>
+                <div class="mt-3 space-y-3 text-sm text-primary/80">
+                  <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="amenities"
+                      value="Lift" class="size-4 accent-secondary" /> Lift</label>
+                  <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="amenities"
+                      value="Parking" class="size-4 accent-secondary" /> Car parking</label>
+                  <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="amenities"
+                      value="Generator" class="size-4 accent-secondary" /> Generator backup</label>
+                  <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="amenities"
+                      value="Gym" class="size-4 accent-secondary" /> Gym</label>
+                  <label class="flex cursor-pointer items-center gap-3"><input type="checkbox" name="amenities"
+                      value="Rooftop" class="size-4 accent-secondary" /> Rooftop</label>
+                </div>
+              </div>
 
-          </form>
+              <!-- Actions -->
+              <div class="flex flex-col gap-3 border-t border-primary/10 pt-6">
+                <button type="submit"
+                  class="bg-primary px-6 py-3.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-secondary">
+                  Apply filters
+                </button>
+                <button type="reset"
+                  class="text-sm text-primary/60 underline underline-offset-4 transition-colors hover:text-primary">
+                  Reset all
+                </button>
+              </div>
+
+            </form>
+          </div>
+
         </aside>
 
         <!-- Results -->
@@ -162,7 +341,8 @@
           <!-- Toolbar -->
           <div class="flex flex-wrap items-center justify-between gap-4 border-b border-primary/10 pb-5">
             <p class="text-sm text-primary/70">
-              Showing <span class="font-semibold text-primary">1–6</span> of <span class="font-semibold text-primary">24</span> apartments
+              Showing <span class="font-semibold text-primary">1–6</span> of <span
+                class="font-semibold text-primary">24</span> apartments
             </p>
             <div class="flex items-center gap-3">
               <button type="button"
@@ -178,7 +358,8 @@
                   <option>Price: high to low</option>
                   <option>Size: largest first</option>
                 </select>
-                <i class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[10px] text-primary/50"></i>
+                <i
+                  class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[10px] text-primary/50"></i>
               </div>
             </div>
           </div>
@@ -187,149 +368,263 @@
           <div class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
 
             <!-- Card 1 -->
-            <article class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+            <article
+              class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
               <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
-                <img src="./assets/images/apartments/apt-1.jpg" alt="Skyline Residence" loading="lazy"
+                <img src="./../assets/images/apartments/apt-1.avif" alt="Skyline Residence" loading="lazy"
                   class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent"></div>
-                <span class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-xs font-medium text-white">Featured</span>
+                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent">
+                </div>
+                <span
+                  class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">Featured</span>
                 <button type="button" aria-label="Save apartment"
-                  class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                  class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                   <i class="fa-regular fa-heart"></i>
                 </button>
-                <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳2.85 Crore</p>
               </div>
-              <div class="p-6">
-                <h3 class="font-serif text-xl text-primary"><a href="apartment-details.html" class="transition-colors hover:text-secondary">Skyline Residence</a></h3>
-                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70"><i class="fa-solid fa-location-dot text-secondary"></i> Gulshan 2, Dhaka</p>
-                <ul class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
-                  <li><i class="fa-solid fa-bed text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p></li>
-                  <li><i class="fa-solid fa-bath text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">3 Baths</p></li>
-                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">2,150 sqft</p></li>
+              <div class="p-4">
+                <a href="./../pages/apartment-details.html"
+                  class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                  <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                    Skyline
+                    Residence</p>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                </a>
+                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
+                  <i class="fa-solid fa-location-dot text-secondary"></i> Gulshan 2, Dhaka
+                </p>
+                <ul
+                  class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
+                  <li><i class="fa-solid fa-bed text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p>
+                  </li>
+                  <li><i class="fa-solid fa-bath text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">3 Baths</p>
+                  </li>
+                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">2,150 sqft</p>
+                  </li>
                 </ul>
               </div>
             </article>
 
             <!-- Card 2 -->
-            <article class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+            <article
+              class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
               <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
-                <img src="./assets/images/apartments/apt-2.jpg" alt="Lakeview Heights" loading="lazy"
+                <img src="./../assets/images/apartments/apt-2.avif" alt="Lakeview Heights" loading="lazy"
                   class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent"></div>
-                <span class="absolute left-0 top-5 bg-primary px-4 py-1.5 text-xs font-medium text-white">New</span>
+                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent">
+                </div>
+                <span
+                  class="absolute left-0 top-5 bg-primary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">New</span>
                 <button type="button" aria-label="Save apartment"
-                  class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                  class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                   <i class="fa-regular fa-heart"></i>
                 </button>
-                <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳1.95 Crore</p>
               </div>
-              <div class="p-6">
-                <h3 class="font-serif text-xl text-primary"><a href="apartment-details.html" class="transition-colors hover:text-secondary">Lakeview Heights</a></h3>
-                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70"><i class="fa-solid fa-location-dot text-secondary"></i> Banani, Dhaka</p>
-                <ul class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
-                  <li><i class="fa-solid fa-bed text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p></li>
-                  <li><i class="fa-solid fa-bath text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">2 Baths</p></li>
-                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">1,850 sqft</p></li>
+              <div class="p-4">
+                <a href="./../pages/apartment-details.html"
+                  class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                  <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                    Lakeview
+                    Heights</p>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                </a>
+
+                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
+                  <i class="fa-solid fa-location-dot text-secondary"></i> Banani, Dhaka
+                </p>
+                <ul
+                  class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
+                  <li><i class="fa-solid fa-bed text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p>
+                  </li>
+                  <li><i class="fa-solid fa-bath text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">2 Baths</p>
+                  </li>
+                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">1,850 sqft</p>
+                  </li>
                 </ul>
               </div>
             </article>
 
             <!-- Card 3 -->
-            <article class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+            <article
+              class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
               <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
-                <img src="./assets/images/apartments/apt-3.jpg" alt="The Orchard" loading="lazy"
+                <img src="./../assets/images/apartments/apt-3.avif" alt="The Orchard" loading="lazy"
                   class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent"></div>
-                <span class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-xs font-medium text-white">Hot deal</span>
+                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent">
+                </div>
+                <span
+                  class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">Hot
+                  Deal</span>
                 <button type="button" aria-label="Save apartment"
-                  class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                  class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                   <i class="fa-regular fa-heart"></i>
                 </button>
-                <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳1.40 Crore</p>
               </div>
-              <div class="p-6">
-                <h3 class="font-serif text-xl text-primary"><a href="apartment-details.html" class="transition-colors hover:text-secondary">The Orchard</a></h3>
-                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70"><i class="fa-solid fa-location-dot text-secondary"></i> Dhanmondi, Dhaka</p>
-                <ul class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
-                  <li><i class="fa-solid fa-bed text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">2 Beds</p></li>
-                  <li><i class="fa-solid fa-bath text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">2 Baths</p></li>
-                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">1,420 sqft</p></li>
+              <div class="p-4">
+
+
+                <a href="./../pages/apartment-details.html"
+                  class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                  <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">The
+                    Orchard</p>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                </a>
+
+                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
+                  <i class="fa-solid fa-location-dot text-secondary"></i> Dhanmondi, Dhaka
+                </p>
+                <ul
+                  class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
+                  <li><i class="fa-solid fa-bed text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">2 Beds</p>
+                  </li>
+                  <li><i class="fa-solid fa-bath text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">2 Baths</p>
+                  </li>
+                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">1,420 sqft</p>
+                  </li>
                 </ul>
               </div>
             </article>
 
             <!-- Card 4 -->
-            <article class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+            <article
+              class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
               <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
-                <img src="./assets/images/apartments/apt-4.jpg" alt="Marina Court" loading="lazy"
+                <img src="./../assets/images/apartments/apt-4.avif" alt="Marina Court" loading="lazy"
                   class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent"></div>
-                <span class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-xs font-medium text-white">Featured</span>
+                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent">
+                </div>
+                <span
+                  class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">Featured</span>
                 <button type="button" aria-label="Save apartment"
-                  class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                  class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                   <i class="fa-regular fa-heart"></i>
                 </button>
-                <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳1.15 Crore</p>
               </div>
-              <div class="p-6">
-                <h3 class="font-serif text-xl text-primary"><a href="apartment-details.html" class="transition-colors hover:text-secondary">Marina Court</a></h3>
-                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70"><i class="fa-solid fa-location-dot text-secondary"></i> Bashundhara R/A, Dhaka</p>
-                <ul class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
-                  <li><i class="fa-solid fa-bed text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p></li>
-                  <li><i class="fa-solid fa-bath text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">3 Baths</p></li>
-                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">1,650 sqft</p></li>
+              <div class="p-4">
+                <a href="./../pages/apartment-details.html"
+                  class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                  <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                    Marina
+                    Court</p>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                </a>
+                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
+                  <i class="fa-solid fa-location-dot text-secondary"></i> Bashundhara R/A, Dhaka
+                </p>
+                <ul
+                  class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
+                  <li><i class="fa-solid fa-bed text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p>
+                  </li>
+                  <li><i class="fa-solid fa-bath text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">3 Baths</p>
+                  </li>
+                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">1,650 sqft</p>
+                  </li>
                 </ul>
               </div>
             </article>
 
             <!-- Card 5 -->
-            <article class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+            <article
+              class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
               <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
-                <img src="./assets/images/apartments/apt-5.jpg" alt="Cedar Park Residence" loading="lazy"
+                <img src="./../assets/images/apartments/apt-2.avif" alt="Cedar Park Residence" loading="lazy"
                   class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent"></div>
-                <span class="absolute left-0 top-5 bg-primary px-4 py-1.5 text-xs font-medium text-white">New</span>
+                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent">
+                </div>
+                <span
+                  class="absolute left-0 top-5 bg-primary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">New</span>
                 <button type="button" aria-label="Save apartment"
-                  class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                  class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                   <i class="fa-regular fa-heart"></i>
                 </button>
-                <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳85 Lac</p>
               </div>
-              <div class="p-6">
-                <h3 class="font-serif text-xl text-primary"><a href="apartment-details.html" class="transition-colors hover:text-secondary">Cedar Park Residence</a></h3>
-                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70"><i class="fa-solid fa-location-dot text-secondary"></i> Uttara, Dhaka</p>
-                <ul class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
-                  <li><i class="fa-solid fa-bed text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">2 Beds</p></li>
-                  <li><i class="fa-solid fa-bath text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">2 Baths</p></li>
-                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">1,200 sqft</p></li>
+              <div class="p-4">
+                <a href="./../pages/apartment-details.html"
+                  class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                  <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                    Cedar
+                    Park Residence</p>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                </a>
+
+                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
+                  <i class="fa-solid fa-location-dot text-secondary"></i> Uttara, Dhaka
+                </p>
+                <ul
+                  class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
+                  <li><i class="fa-solid fa-bed text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">2 Beds</p>
+                  </li>
+                  <li><i class="fa-solid fa-bath text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">2 Baths</p>
+                  </li>
+                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">1,200 sqft</p>
+                  </li>
                 </ul>
               </div>
             </article>
 
             <!-- Card 6 -->
-            <article class="group bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+            <article
+              class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
               <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
-                <img src="./assets/images/apartments/apt-6.jpg" alt="Crown Tower Penthouse" loading="lazy"
+                <img src="./../assets/images/apartments/apt-3.avif" alt="Crown Tower Penthouse" loading="lazy"
                   class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent"></div>
-                <span class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-xs font-medium text-white">Featured</span>
+                <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent">
+                </div>
+                <span
+                  class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">Featured</span>
                 <button type="button" aria-label="Save apartment"
-                  class="absolute right-4 top-4 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                  class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
                   <i class="fa-regular fa-heart"></i>
                 </button>
-                <p class="absolute bottom-4 left-5 font-serif text-2xl text-white">৳4.50 Crore</p>
               </div>
-              <div class="p-6">
-                <h3 class="font-serif text-xl text-primary"><a href="apartment-details.html" class="transition-colors hover:text-secondary">Crown Tower Penthouse</a></h3>
-                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70"><i class="fa-solid fa-location-dot text-secondary"></i> Gulshan 1, Dhaka</p>
-                <ul class="mt-6 grid grid-cols-3 divide-x divide-primary/10 border-t border-primary/10 pt-5 text-center">
-                  <li><i class="fa-solid fa-bed text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">4 Beds</p></li>
-                  <li><i class="fa-solid fa-bath text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">4 Baths</p></li>
-                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i><p class="mt-1.5 text-sm font-medium text-primary">3,200 sqft</p></li>
+              <div class="p-4">
+
+                <a href="./../pages/apartment-details.html"
+                  class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                  <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                    Crown
+                    Tower Penthouse</p>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+                </a>
+
+                <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
+                  <i class="fa-solid fa-location-dot text-secondary"></i> Gulshan 1, Dhaka
+                </p>
+                <ul
+                  class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
+                  <li><i class="fa-solid fa-bed text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">4 Beds</p>
+                  </li>
+                  <li><i class="fa-solid fa-bath text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">4 Baths</p>
+                  </li>
+                  <li><i class="fa-solid fa-ruler-combined text-secondary"></i>
+                    <p class="mt-1.5 text-sm font-medium text-primary">3,200 sqft</p>
+                  </li>
                 </ul>
               </div>
             </article>
-
           </div>
 
           <!-- Pagination -->
@@ -338,11 +633,15 @@
               class="pointer-events-none flex size-11 items-center justify-center border border-primary/15 text-primary/30">
               <i class="fa-solid fa-chevron-left text-xs"></i>
             </a>
-            <a href="#" aria-current="page" class="flex size-11 items-center justify-center bg-primary text-sm font-medium text-white">1</a>
-            <a href="#" class="flex size-11 items-center justify-center border border-primary/20 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white">2</a>
-            <a href="#" class="flex size-11 items-center justify-center border border-primary/20 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white">3</a>
+            <a href="#" aria-current="page"
+              class="flex size-11 items-center justify-center bg-primary text-sm font-medium text-white">1</a>
+            <a href="#"
+              class="flex size-11 items-center justify-center border border-primary/20 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white">2</a>
+            <a href="#"
+              class="flex size-11 items-center justify-center border border-primary/20 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white">3</a>
             <span class="px-1 text-primary/50">…</span>
-            <a href="#" class="flex size-11 items-center justify-center border border-primary/20 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white">4</a>
+            <a href="#"
+              class="flex size-11 items-center justify-center border border-primary/20 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white">4</a>
             <a href="#" aria-label="Next page"
               class="flex size-11 items-center justify-center border border-primary/20 text-primary transition-colors hover:bg-primary hover:text-white">
               <i class="fa-solid fa-chevron-right text-xs"></i>
@@ -353,7 +652,8 @@
           <div class="mt-16 flex flex-col gap-6 bg-primary p-8 sm:flex-row sm:items-center sm:justify-between lg:p-10">
             <div>
               <h3 class="font-serif text-2xl text-white">Can't find the right apartment?</h3>
-              <p class="mt-2 text-sm text-white/70">Tell us what you need and our agents will search for it on your behalf.</p>
+              <p class="mt-2 text-sm text-white/70">Tell us what you need and our agents will search for it on your
+                behalf.</p>
             </div>
             <a href="contact.html"
               class="inline-flex shrink-0 items-center justify-center bg-secondary px-7 py-3.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-secondary-dark">
@@ -367,9 +667,148 @@
 
   </main>
 
-  <!-- 2. index.html থেকে Footer কপি করে এখানে বসান -->
+  <!-- Footer -->
+  <footer class="bg-primary text-white/70">
+
+    <!-- Newsletter strip -->
+    <div class="border-b border-white/10">
+      <div
+        class="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-14 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <div class="max-w-md">
+          <p class="flex items-center gap-4 text-xs font-medium uppercase tracking-[0.3em] text-secondary-light">
+            <span class="h-px w-10 bg-secondary-light"></span>
+            Newsletter
+          </p>
+          <h2 class="mt-4 font-serif text-2xl leading-snug text-white sm:text-3xl">
+            Be the first to see new listings.
+          </h2>
+        </div>
+
+        <form action="#" method="post" class="flex w-full max-w-lg flex-col sm:flex-row">
+          <label for="footer-email" class="sr-only">Email address</label>
+          <input type="email" id="footer-email" name="email" required placeholder="Your email address"
+            class="w-full border border-white/20 bg-transparent px-5 py-4 text-sm text-white outline-none transition-colors placeholder:text-white/40 focus:border-secondary-light" />
+          <button type="submit"
+            class="group flex items-center justify-center gap-3 bg-secondary px-8 py-4 text-[12px] font-semibold uppercase tracking-[0.2em] text-white transition-colors duration-300 hover:bg-secondary-dark">
+            Subscribe
+            <i class="fa-solid fa-arrow-right-long transition-transform duration-300 group-hover:translate-x-1.5"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Main footer -->
+    <div class="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:grid-cols-2 sm:px-6 lg:grid-cols-12 lg:px-8">
+
+      <!-- Brand -->
+      <div class="lg:col-span-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <span class="flex size-10 items-center justify-center bg-white font-serif text-xl text-primary">N</span>
+          <span class="flex flex-col leading-none">
+            <span class="font-serif text-xl font-semibold uppercase tracking-[0.22em] text-white">Nibash</span>
+            <span class="mt-1 text-[10px] uppercase tracking-[0.3em] text-secondary-light">Real
+              Estate</span>
+          </span>
+        </a>
+        <p class="mt-6 max-w-sm text-sm leading-relaxed">
+          We help families and investors find well-built apartments in the city's best neighbourhoods, with
+          clear pricing and honest advice at every step.
+        </p>
+        <div class="mt-7 flex gap-3">
+          <a href="#" aria-label="Facebook"
+            class="flex size-10 items-center justify-center border border-white/20 text-white transition-colors duration-300 hover:border-secondary hover:bg-secondary">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Instagram"
+            class="flex size-10 items-center justify-center border border-white/20 text-white transition-colors duration-300 hover:border-secondary hover:bg-secondary">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn"
+            class="flex size-10 items-center justify-center border border-white/20 text-white transition-colors duration-300 hover:border-secondary hover:bg-secondary">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" aria-label="YouTube"
+            class="flex size-10 items-center justify-center border border-white/20 text-white transition-colors duration-300 hover:border-secondary hover:bg-secondary">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div class="lg:col-span-2">
+        <h3 class="text-[12px] font-semibold uppercase tracking-[0.25em] text-white">Quick Links</h3>
+        <span class="mt-4 block h-px w-8 bg-secondary-light"></span>
+        <ul class="mt-6 space-y-3.5 text-sm">
+          <li><a href="index.html" class="transition-colors hover:text-secondary-light">Home</a></li>
+          <li><a href="apartments.html" class="transition-colors hover:text-secondary-light">Apartments</a>
+          </li>
+          <li><a href="about.html" class="transition-colors hover:text-secondary-light">About Us</a></li>
+          <li><a href="agents.html" class="transition-colors hover:text-secondary-light">Our Agents</a></li>
+          <li><a href="contact.html" class="transition-colors hover:text-secondary-light">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Locations -->
+      <div class="lg:col-span-2">
+        <h3 class="text-[12px] font-semibold uppercase tracking-[0.25em] text-white">Locations</h3>
+        <span class="mt-4 block h-px w-8 bg-secondary-light"></span>
+        <ul class="mt-6 space-y-3.5 text-sm">
+          <li><a href="apartments.html?location=Gulshan"
+              class="transition-colors hover:text-secondary-light">Gulshan</a></li>
+          <li><a href="apartments.html?location=Banani" class="transition-colors hover:text-secondary-light">Banani</a>
+          </li>
+          <li><a href="apartments.html?location=Dhanmondi"
+              class="transition-colors hover:text-secondary-light">Dhanmondi</a></li>
+          <li><a href="apartments.html?location=Bashundhara+R%2FA"
+              class="transition-colors hover:text-secondary-light">Bashundhara R/A</a></li>
+          <li><a href="apartments.html?location=Uttara" class="transition-colors hover:text-secondary-light">Uttara</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="sm:col-span-2 lg:col-span-4">
+        <h3 class="text-[12px] font-semibold uppercase tracking-[0.25em] text-white">Get in Touch</h3>
+        <span class="mt-4 block h-px w-8 bg-secondary-light"></span>
+        <ul class="mt-6 space-y-5 text-sm">
+          <li class="flex gap-4">
+            <i class="fa-solid fa-location-dot mt-1 w-4 text-secondary-light"></i>
+            <span>House 12, Road 5, Gulshan 2,<br />Dhaka 1212, Bangladesh</span>
+          </li>
+          <li class="flex gap-4">
+            <i class="fa-solid fa-phone mt-1 w-4 text-secondary-light"></i>
+            <a href="tel:+8801700000000" class="transition-colors hover:text-white">+880 1700 000 000</a>
+          </li>
+          <li class="flex gap-4">
+            <i class="fa-regular fa-envelope mt-1 w-4 text-secondary-light"></i>
+            <a href="mailto:hello@nibash.com" class="transition-colors hover:text-white">hello@nibash.com</a>
+          </li>
+          <li class="flex gap-4">
+            <i class="fa-regular fa-clock mt-1 w-4 text-secondary-light"></i>
+            <span>Sat – Thu: 10:00 AM – 7:00 PM</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-white/10">
+      <div
+        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs tracking-wide sm:px-6 md:flex-row lg:px-8">
+        <p>&copy; 2026 Nibash Real Estate. All rights reserved.</p>
+        <a href="#top"
+          class="group flex items-center gap-2 uppercase tracking-[0.2em] transition-colors hover:text-white">
+          Back to top
+          <i class="fa-solid fa-arrow-up transition-transform duration-300 group-hover:-translate-y-1"></i>
+        </a>
+      </div>
+    </div>
+
+  </footer>
 
   <script src="./../assets/js/preline.js"></script>
   <script src="./../assets/js/main.js"></script>
 </body>
+
 </html>
