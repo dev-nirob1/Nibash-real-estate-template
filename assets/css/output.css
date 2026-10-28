@@ -1049,6 +1049,9 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .border-primary {
+    border-color: var(--color-primary);
+  }
   .border-primary\/10 {
     border-color: color-mix(in srgb, #26303B 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
