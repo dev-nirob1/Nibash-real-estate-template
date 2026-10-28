@@ -375,6 +375,9 @@
   .col-span-3 {
     grid-column: span 3 / span 3;
   }
+  .row-span-2 {
+    grid-row: span 2 / span 2;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -609,6 +612,9 @@
   .h-\[360px\] {
     height: 360px;
   }
+  .h-\[420px\] {
+    height: 420px;
+  }
   .h-auto\! {
     height: auto !important;
   }
@@ -665,6 +671,9 @@
   }
   .w-\[calc\(100\%-32px\)\] {
     width: calc(100% - 32px);
+  }
+  .w-fit {
+    width: fit-content;
   }
   .w-full {
     width: 100%;
@@ -797,6 +806,9 @@
   }
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -2033,6 +2045,10 @@
     --tw-scale-y: 0%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
+  .before\:bg-secondary::before {
+    content: var(--tw-content);
+    background-color: var(--color-secondary);
+  }
   .before\:bg-white::before {
     content: var(--tw-content);
     background-color: var(--color-white);
@@ -2251,6 +2267,9 @@
     .sm\:h-\[340px\] {
       height: 340px;
     }
+    .sm\:h-\[540px\] {
+      height: 540px;
+    }
     .sm\:w-auto {
       width: auto;
     }
@@ -2277,6 +2296,9 @@
     }
     .sm\:justify-between {
       justify-content: space-between;
+    }
+    .sm\:gap-4 {
+      gap: calc(var(--spacing) * 4);
     }
     .sm\:p-6 {
       padding: calc(var(--spacing) * 6);
@@ -2421,6 +2443,9 @@
     .lg\:h-\[480px\] {
       height: 480px;
     }
+    .lg\:h-full {
+      height: 100%;
+    }
     .lg\:max-h-\[calc\(100vh-8rem\)\] {
       max-height: calc(100vh - 8rem);
     }
@@ -2429,6 +2454,9 @@
     }
     .lg\:min-h-\[380px\] {
       min-height: 380px;
+    }
+    .lg\:min-h-\[560px\] {
+      min-height: 560px;
     }
     .lg\:min-h-\[740px\] {
       min-height: 740px;
@@ -2474,6 +2502,9 @@
     .lg\:items-start {
       align-items: flex-start;
     }
+    .lg\:items-stretch {
+      align-items: stretch;
+    }
     .lg\:justify-between {
       justify-content: space-between;
     }
@@ -2482,6 +2513,9 @@
     }
     .lg\:gap-8 {
       gap: calc(var(--spacing) * 8);
+    }
+    .lg\:gap-10 {
+      gap: calc(var(--spacing) * 10);
     }
     .lg\:gap-14 {
       gap: calc(var(--spacing) * 14);
