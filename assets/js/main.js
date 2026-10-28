@@ -26,3 +26,28 @@ if (testimonialEl && typeof Swiper !== 'undefined') {
     },
   });
 }
+
+const galleryEl = document.querySelector('.gallery-swiper');
+
+if (galleryEl && typeof Swiper !== 'undefined') {
+  new Swiper(galleryEl, {
+    effect: 'coverflow',
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    grabCursor: true,
+    speed: 700,
+    coverflowEffect: {
+      rotate: 28,
+      stretch: 0,
+      depth: 140,
+      modifier: 1,
+      slideShadows: false,
+    },
+    navigation: {
+      nextEl: '.g-next',
+      prevEl: '.g-prev',
+    },
+  });
+}
+

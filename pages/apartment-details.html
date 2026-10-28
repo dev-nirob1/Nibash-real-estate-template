@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skyline Residence | Nibash</title>
-  <meta name="description" content="3-bedroom apartment for sale in Gulshan 2, Dhaka. See photos, floor plan, payment plan and location." />
+  <meta name="description"
+    content="3-bedroom apartment for sale in Gulshan 2, Dhaka. See photos, floor plan, payment plan and location." />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./../assets/css/output.css" />
 </head>
 
@@ -86,11 +90,10 @@
 
       <!-- Desktop CTA -->
       <a href="./../pages/contact.html"
-        class="group bg-primary relative hidden lg:inline-flex items-center justify-center gap-3 overflow-hidden border border-white/60 px-9 py-4 text-[12px] font-semibold uppercase tracking-[0.2em] text-white transition-colors duration-300 before:absolute before:inset-0 before:origin-left before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:text-primary hover:before:scale-x-100">
-        <span class="relative">Book a Visit</span>
-        <i class="fa-solid fa-arrow-right"></i>
-      </a>
-
+                class="group relative flex items-center justify-center gap-3 overflow-hidden bg-primary px-9 py-4 text-sm font-semibold tracking-[0.2em] text-white transition-colors duration-300 before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-white before:transition-transform before:duration-300 hover:text-primary hover:before:scale-y-100">
+                <span class="relative">Book a visit</span>
+                <i class="fa-solid fa-arrow-right relative"></i>
+            </a>
       <!-- Mobile sidebar toggle -->
       <button type="button"
         class="flex size-10 text-xl items-center justify-center border border-primary/30 text-primary transition hover:bg-primary hover:text-white lg:hidden"
@@ -161,10 +164,11 @@
         <p class="text-[11px] uppercase tracking-[0.25em] text-secondary">Get in touch</p>
         <a href="tel:+8801700000000" class="mt-3 block font-serif text-xl text-primary">+880 1700 000 000</a>
         <a href="mailto:hello@nibash.com" class="mt-1 block text-sm text-primary/70">hello@nibash.com</a>
-        <a href="./contact.html"
-          class="mt-5 flex items-center justify-center bg-primary px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-secondary">
-          Book a Visit
-        </a>
+      <a href="./../pages/contact.html"
+                class="group relative flex items-center justify-center gap-3 overflow-hidden bg-primary px-9 py-4 text-sm font-semibold tracking-[0.2em] text-white transition-colors duration-300 before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-white before:transition-transform before:duration-300 hover:text-primary hover:before:scale-y-100">
+                <span class="relative">Book a visit</span>
+                <i class="fa-solid fa-arrow-right relative"></i>
+            </a>
       </div>
 
     </div>
@@ -183,118 +187,180 @@
       </nav>
     </div>
 
-    <!-- Coverflow gallery (design only) -->
-    <section class="overflow-hidden bg-primary py-10 lg:py-14">
-      <div class="relative">
+    <!-- Coverflow gallery -->
+    <section class="py-10 lg:py-14">
+      <div class="group relative mx-auto max-w-[1600px]">
 
-        <div class="flex items-center justify-center gap-4 [perspective:1400px] lg:gap-6">
+        <div class="swiper gallery-swiper py-8">
+          <div class="swiper-wrapper">
 
-          <!-- Far left -->
-          <figure class="hidden shrink-0 opacity-40 lg:block lg:w-[20%] [transform:rotateY(38deg)_scale(.75)]">
-            <img src="./../assets/images/apartments/apt-1.avif" alt="Living room" class="aspect-[4/3] w-full object-cover" />
-          </figure>
+            <!-- Slide 1 -->
+            <div
+              class="swiper-slide w-[80%]! opacity-60 transition-opacity duration-500 md:w-[60%]! [&.swiper-slide-active]:opacity-100 [&.swiper-slide-active]:shadow-2xl [&.swiper-slide-active]:shadow-primary/25 [&.swiper-slide-next]:opacity-80 [&.swiper-slide-prev]:opacity-80">
+              <figure class="h-[240px] sm:h-[340px] lg:h-[480px]">
+                <img src="./../assets/images/apartments/apt-1.avif" alt="Living room" class="size-full object-cover" />
+              </figure>
+            </div>
 
-          <!-- Near left -->
-          <figure class="w-[72%] shrink-0 opacity-60 md:w-[36%] lg:w-[28%] [transform:rotateY(28deg)_scale(.88)]">
-            <img src="./../assets/images/apartments/apt-2.avif" alt="Kitchen" class="aspect-[4/3] w-full object-cover" />
-          </figure>
+            <!-- Slide 2 -->
+            <div
+              class="swiper-slide w-[80%]! opacity-60 transition-opacity duration-500 md:w-[60%]! [&.swiper-slide-active]:opacity-100 [&.swiper-slide-active]:shadow-2xl [&.swiper-slide-active]:shadow-primary/25 [&.swiper-slide-next]:opacity-80 [&.swiper-slide-prev]:opacity-80">
+              <figure class="h-[240px] sm:h-[340px] lg:h-[480px]">
+                <img src="./../assets/images/apartments/apt-2.avif" alt="Kitchen" class="size-full object-cover" />
+              </figure>
+            </div>
 
-          <!-- Center -->
-          <figure class="relative z-10 w-[72%] shrink-0 shadow-2xl shadow-black/40 md:w-[46%] lg:w-[40%]">
-            <img src="./../assets/images/apartments/apt-3.avif" alt="Master bedroom" class="aspect-[4/3] w-full object-cover" />
-          </figure>
+            <!-- Slide 3 -->
+            <div
+              class="swiper-slide w-[80%]! opacity-60 transition-opacity duration-500 md:w-[60%]! [&.swiper-slide-active]:opacity-100 [&.swiper-slide-active]:shadow-2xl [&.swiper-slide-active]:shadow-primary/25 [&.swiper-slide-next]:opacity-80 [&.swiper-slide-prev]:opacity-80">
+              <figure class="h-[240px] sm:h-[340px] lg:h-[480px]">
+                <img src="./../assets/images/apartments/apt-3.avif" alt="Master bedroom"
+                  class="size-full object-cover" />
+              </figure>
+            </div>
 
-          <!-- Near right -->
-          <figure class="w-[72%] shrink-0 opacity-60 md:w-[36%] lg:w-[28%] [transform:rotateY(-28deg)_scale(.88)]">
-            <img src="./../assets/images/apartments/apt-4.avif" alt="Balcony view" class="aspect-[4/3] w-full object-cover" />
-          </figure>
+            <!-- Slide 4 -->
+            <div
+              class="swiper-slide w-[80%]! opacity-60 transition-opacity duration-500 md:w-[60%]! [&.swiper-slide-active]:opacity-100 [&.swiper-slide-active]:shadow-2xl [&.swiper-slide-active]:shadow-primary/25 [&.swiper-slide-next]:opacity-80 [&.swiper-slide-prev]:opacity-80">
+              <figure class="h-[240px] sm:h-[340px] lg:h-[480px]">
+                <img src="./../assets/images/apartments/apt-1.avif" alt="Balcony view" class="size-full object-cover" />
+              </figure>
+            </div>
 
-          <!-- Far right -->
-          <figure class="hidden shrink-0 opacity-40 lg:block lg:w-[20%] [transform:rotateY(-38deg)_scale(.75)]">
-            <img src="./assets/images/details/gallery-5.jpg" alt="Bathroom" class="aspect-[4/3] w-full object-cover" />
-          </figure>
+            <!-- Slide 5 -->
+            <div
+              class="swiper-slide w-[80%]! opacity-60 transition-opacity duration-500 md:w-[60%]! [&.swiper-slide-active]:opacity-100 [&.swiper-slide-active]:shadow-2xl [&.swiper-slide-active]:shadow-primary/25 [&.swiper-slide-next]:opacity-80 [&.swiper-slide-prev]:opacity-80">
+              <figure class="h-[240px] sm:h-[340px] lg:h-[480px]">
+                <img src="./../assets/images/apartments/apt-2.avif" alt="Bathroom" class="size-full object-cover" />
+              </figure>
+            </div>
 
+            <!-- Slide 6 -->
+            <div
+              class="swiper-slide w-[80%]! opacity-60 transition-opacity duration-500 md:w-[60%]! [&.swiper-slide-active]:opacity-100 [&.swiper-slide-active]:shadow-2xl [&.swiper-slide-active]:shadow-primary/25 [&.swiper-slide-next]:opacity-80 [&.swiper-slide-prev]:opacity-80">
+              <figure class="h-[240px] sm:h-[340px] lg:h-[480px]">
+                <img src="./../assets/images/apartments/apt-3.avif" alt="Dining area" class="size-full object-cover" />
+              </figure>
+            </div>
+
+          </div>
         </div>
 
-        <!-- Edge fades -->
-        <div class="pointer-events-none absolute inset-y-0 left-0 w-12 bg-linear-to-r from-primary to-transparent lg:w-40"></div>
-        <div class="pointer-events-none absolute inset-y-0 right-0 w-12 bg-linear-to-l from-primary to-transparent lg:w-40"></div>
-      </div>
-
-      <!-- Controls (visual only) -->
-      <div class="mt-8 flex items-center justify-center gap-5 text-white">
+        <!-- Prev / Next (visible on hover) -->
         <button type="button" aria-label="Previous photo"
-          class="flex size-11 items-center justify-center border border-white/30 transition-colors hover:bg-white hover:text-primary">
+          class="g-prev cursor-pointer absolute left-4 top-1/2 z-20 hidden size-12 -translate-y-1/2 items-center justify-center border border-white/30 bg-primary/70 text-white opacity-0 backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-primary focus-visible:opacity-100 group-hover:opacity-100 md:flex lg:left-8">
           <i class="fa-solid fa-arrow-left-long"></i>
         </button>
-        <p class="text-sm tabular-nums text-white/80"><span class="text-white">3</span> / 12</p>
         <button type="button" aria-label="Next photo"
-          class="flex size-11 items-center justify-center border border-white/30 transition-colors hover:bg-white hover:text-primary">
+          class="g-next cursor-pointer absolute right-4 top-1/2 z-20 hidden size-12 -translate-y-1/2 items-center justify-center border border-white/30 bg-primary/70 text-white opacity-0 backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-primary focus-visible:opacity-100 group-hover:opacity-100 md:flex lg:right-8">
           <i class="fa-solid fa-arrow-right-long"></i>
         </button>
+
       </div>
     </section>
 
-    <!-- Quick links -->
-    <div class="border-b border-primary/10 bg-surface">
-      <div class="mx-auto flex max-w-7xl gap-8 overflow-x-auto px-4 py-4 text-sm font-medium text-primary sm:px-6 lg:px-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <a href="#overview" class="shrink-0 transition-colors hover:text-secondary">Overview</a>
-        <a href="#details" class="shrink-0 transition-colors hover:text-secondary">Details</a>
-        <a href="#amenities" class="shrink-0 transition-colors hover:text-secondary">Amenities</a>
-        <a href="#floor-plan" class="shrink-0 transition-colors hover:text-secondary">Floor plan</a>
-        <a href="#video" class="shrink-0 transition-colors hover:text-secondary">Video tour</a>
-        <a href="#payment" class="shrink-0 transition-colors hover:text-secondary">Payment plan</a>
-        <a href="#location" class="shrink-0 transition-colors hover:text-secondary">Location</a>
-        <a href="#legal" class="shrink-0 transition-colors hover:text-secondary">Documents</a>
-      </div>
-    </div>
+
 
     <!-- Title block -->
     <section class="bg-canvas pt-10 lg:pt-14">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
 
-          <div>
-            <div class="flex flex-wrap items-center gap-2 text-xs font-medium">
+          <!-- Left: badges, title, address -->
+          <div class="max-w-3xl">
+            <div class="flex flex-wrap items-center gap-2 text-xs font-medium uppercase tracking-[0.14em]">
               <span class="bg-secondary px-3 py-1.5 text-white">For sale</span>
               <span class="bg-primary px-3 py-1.5 text-white">Featured</span>
               <span class="border border-primary/20 px-3 py-1.5 text-primary">Ready to move</span>
             </div>
-            <h1 class="mt-5 font-serif text-4xl leading-[1.05] text-primary sm:text-5xl lg:text-6xl">Skyline Residence</h1>
-            <p class="mt-4 flex items-center gap-2 text-primary/70">
-              <i class="fa-solid fa-location-dot text-secondary"></i>
+
+            <h1 class="mt-6 font-display text-4xl leading-[1.05] tracking-tight text-primary sm:text-5xl lg:text-6xl">
+              Skyline Residence
+            </h1>
+
+            <p class="mt-5 flex items-center gap-2.5 text-base text-primary/70">
+              <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>
               House 24, Road 11, Gulshan 2, Dhaka 1212
             </p>
           </div>
 
-          <div class="flex items-end justify-between gap-8 lg:flex-col lg:items-end lg:gap-5">
-            <div class="lg:text-right">
-              <p class="font-serif text-4xl text-primary sm:text-5xl">৳2.85 Crore</p>
-              <p class="mt-1 text-sm text-primary/60">৳13,256 per sqft</p>
-            </div>
-            <div class="flex gap-2">
-              <button type="button" aria-label="Save apartment"
-                class="flex size-11 items-center justify-center border border-primary/25 text-primary transition-colors hover:bg-primary hover:text-white"><i class="fa-regular fa-heart"></i></button>
-              <button type="button" aria-label="Share apartment"
-                class="flex size-11 items-center justify-center border border-primary/25 text-primary transition-colors hover:bg-primary hover:text-white"><i class="fa-solid fa-share-nodes"></i></button>
-              <button type="button" aria-label="Print page" onclick="window.print()"
-                class="flex size-11 items-center justify-center border border-primary/25 text-primary transition-colors hover:bg-primary hover:text-white"><i class="fa-solid fa-print"></i></button>
-            </div>
+          <!-- Right: actions -->
+          <div class="flex gap-2 lg:pt-2">
+            <button type="button" aria-label="Save apartment"
+              class="cursor-pointer flex size-11 items-center justify-center border border-primary/25 text-primary transition-colors hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+              <i class="fa-regular fa-heart" aria-hidden="true"></i>
+            </button>
+            <button type="button" aria-label="Share apartment"
+              class="cursor-pointer flex size-11 items-center justify-center border border-primary/25 text-primary transition-colors hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+              <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+            </button>
+            <button type="button" aria-label="Print page" onclick="window.print()"
+              class="cursor-pointer flex size-11 items-center justify-center border border-primary/25 text-primary transition-colors hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+              <i class="fa-solid fa-print" aria-hidden="true"></i>
+            </button>
           </div>
 
         </div>
 
         <!-- Key facts -->
-        <dl class="mt-10 grid grid-cols-2 gap-px bg-primary/10 sm:grid-cols-4">
-          <div class="bg-surface px-5 py-5"><dt class="text-xs text-primary/55"><i class="fa-solid fa-bed mr-2 text-secondary"></i>Bedrooms</dt><dd class="mt-2 font-serif text-2xl text-primary">3</dd></div>
-          <div class="bg-surface px-5 py-5"><dt class="text-xs text-primary/55"><i class="fa-solid fa-bath mr-2 text-secondary"></i>Bathrooms</dt><dd class="mt-2 font-serif text-2xl text-primary">3</dd></div>
-          <div class="bg-surface px-5 py-5"><dt class="text-xs text-primary/55"><i class="fa-regular fa-square mr-2 text-secondary"></i>Balconies</dt><dd class="mt-2 font-serif text-2xl text-primary">3</dd></div>
-          <div class="bg-surface px-5 py-5"><dt class="text-xs text-primary/55"><i class="fa-solid fa-ruler-combined mr-2 text-secondary"></i>Size</dt><dd class="mt-2 font-serif text-2xl text-primary">2,150 sqft</dd></div>
-          <div class="bg-surface px-5 py-5"><dt class="text-xs text-primary/55"><i class="fa-solid fa-layer-group mr-2 text-secondary"></i>Floor</dt><dd class="mt-2 font-serif text-2xl text-primary">7th of 12</dd></div>
-          <div class="bg-surface px-5 py-5"><dt class="text-xs text-primary/55"><i class="fa-regular fa-sun mr-2 text-secondary"></i>Facing</dt><dd class="mt-2 font-serif text-2xl text-primary">South-east</dd></div>
-          <div class="bg-surface px-5 py-5"><dt class="text-xs text-primary/55"><i class="fa-solid fa-square-parking mr-2 text-secondary"></i>Parking</dt><dd class="mt-2 font-serif text-2xl text-primary">1 car</dd></div>
-          <div class="bg-surface px-5 py-5"><dt class="text-xs text-primary/55"><i class="fa-regular fa-calendar mr-2 text-secondary"></i>Built</dt><dd class="mt-2 font-serif text-2xl text-primary">2023</dd></div>
-        </dl>
+        <ul class="mt-10 grid grid-cols-2 gap-px border border-primary/10 bg-primary/10 sm:grid-cols-4">
+          <li class="flex items-center gap-4 bg-surface px-5 py-5">
+            <i class="fa-solid fa-bed w-5 text-center text-lg text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-primary/55">Bedrooms</p>
+              <p class="mt-1 font-display text-2xl leading-none text-primary">3</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-4 bg-surface px-5 py-5">
+            <i class="fa-solid fa-bath w-5 text-center text-lg text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-primary/55">Bathrooms</p>
+              <p class="mt-1 font-display text-2xl leading-none text-primary">3</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-4 bg-surface px-5 py-5">
+            <i class="fa-regular fa-square w-5 text-center text-lg text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-primary/55">Balconies</p>
+              <p class="mt-1 font-display text-2xl leading-none text-primary">3</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-4 bg-surface px-5 py-5">
+            <i class="fa-solid fa-ruler-combined w-5 text-center text-lg text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-primary/55">Size</p>
+              <p class="mt-1 font-display text-2xl leading-none text-primary">2,150 sqft</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-4 bg-surface px-5 py-5">
+            <i class="fa-solid fa-layer-group w-5 text-center text-lg text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-primary/55">Floor</p>
+              <p class="mt-1 font-display text-2xl leading-none text-primary">7th of 12</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-4 bg-surface px-5 py-5">
+            <i class="fa-regular fa-sun w-5 text-center text-lg text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-primary/55">Facing</p>
+              <p class="mt-1 font-display text-2xl leading-none text-primary">South-east</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-4 bg-surface px-5 py-5">
+            <i class="fa-solid fa-square-parking w-5 text-center text-lg text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-primary/55">Parking</p>
+              <p class="mt-1 font-display text-2xl leading-none text-primary">1 car</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-4 bg-surface px-5 py-5">
+            <i class="fa-regular fa-calendar w-5 text-center text-lg text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-primary/55">Built</p>
+              <p class="mt-1 font-display text-2xl leading-none text-primary">2023</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -307,139 +373,279 @@
 
           <!-- Overview -->
           <div id="overview" class="scroll-mt-28">
-            <h2 class="font-serif text-2xl text-primary sm:text-3xl">Overview</h2>
+            <h2 class="font-display text-2xl text-primary sm:text-3xl">Overview</h2>
             <p class="mt-5 leading-8 text-primary/75">
-              Skyline Residence is a bright three-bedroom apartment on the seventh floor of a well-maintained twelve-storey building in the heart of Gulshan 2. Large windows and three balconies bring in plenty of natural light and a pleasant south-east breeze through the day.
+              Skyline Residence is a bright three-bedroom apartment on the seventh floor of a well-maintained
+              twelve-storey building in the heart of Gulshan 2. Large windows and three balconies bring in plenty of
+              natural light and a pleasant south-east breeze through the day.
             </p>
             <p class="mt-4 leading-8 text-primary/75">
-              The layout separates living and sleeping areas, with a spacious living and dining space, a modern kitchen with a utility area, and a master bedroom with its own dressing room. Schools, hospitals, restaurants and shopping are all within a few minutes' drive.
+              The layout separates living and sleeping areas, with a spacious living and dining space, a modern kitchen
+              with a utility area, and a master bedroom with its own dressing room. Schools, hospitals, restaurants and
+              shopping are all within a few minutes' drive.
             </p>
             <ul class="mt-6 grid gap-3 text-primary/80 sm:grid-cols-2">
-              <li class="flex items-start gap-3"><i class="fa-solid fa-check mt-1.5 text-xs text-secondary"></i> Ready to move in, handover on agreement</li>
-              <li class="flex items-start gap-3"><i class="fa-solid fa-check mt-1.5 text-xs text-secondary"></i> Three balconies with open views</li>
-              <li class="flex items-start gap-3"><i class="fa-solid fa-check mt-1.5 text-xs text-secondary"></i> Dressing room attached to master bedroom</li>
-              <li class="flex items-start gap-3"><i class="fa-solid fa-check mt-1.5 text-xs text-secondary"></i> Dedicated car parking space</li>
+              <li class="flex items-start gap-3"><i class="fa-solid fa-check mt-1.5 text-xs text-secondary"></i> Ready
+                to move in, handover on agreement</li>
+              <li class="flex items-start gap-3"><i class="fa-solid fa-check mt-1.5 text-xs text-secondary"></i> Three
+                balconies with open views</li>
+              <li class="flex items-start gap-3"><i class="fa-solid fa-check mt-1.5 text-xs text-secondary"></i>
+                Dressing room attached to master bedroom</li>
+              <li class="flex items-start gap-3"><i class="fa-solid fa-check mt-1.5 text-xs text-secondary"></i>
+                Dedicated car parking space</li>
             </ul>
           </div>
 
           <!-- Details -->
           <div id="details" class="mt-14 scroll-mt-28 border-t border-primary/10 pt-12">
-            <h2 class="font-serif text-2xl text-primary sm:text-3xl">Property details</h2>
-            <dl class="mt-6 grid gap-x-12 sm:grid-cols-2">
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Property ID</dt><dd class="font-medium text-primary">NB-1042</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Type</dt><dd class="font-medium text-primary">Apartment</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Status</dt><dd class="font-medium text-primary">Ready to move</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Total size</dt><dd class="font-medium text-primary">2,150 sqft</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Bedrooms</dt><dd class="font-medium text-primary">3</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Bathrooms</dt><dd class="font-medium text-primary">3</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Balconies</dt><dd class="font-medium text-primary">3</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Floor</dt><dd class="font-medium text-primary">7th of 12</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Facing</dt><dd class="font-medium text-primary">South-east</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Year built</dt><dd class="font-medium text-primary">2023</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Flooring</dt><dd class="font-medium text-primary">Vitrified tiles</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Utilities</dt><dd class="font-medium text-primary">Gas, water, electricity</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Parking</dt><dd class="font-medium text-primary">1 covered car space</dd></div>
-              <div class="flex justify-between gap-4 border-b border-primary/10 py-4"><dt class="text-primary/60">Service charge</dt><dd class="font-medium text-primary">৳6,500 / month</dd></div>
-            </dl>
+            <h2 class="font-display text-2xl text-primary sm:text-3xl">Property details</h2>
+
+            <ul class="mt-8 grid gap-x-14 border-t border-primary/10 sm:grid-cols-2">
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-solid fa-hashtag w-4 text-center text-secondary" aria-hidden="true"></i>Property ID
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">NB-1042</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-regular fa-building w-4 text-center text-secondary" aria-hidden="true"></i>Type
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">Apartment</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-regular fa-circle-check w-4 text-center text-secondary" aria-hidden="true"></i>Status
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">Ready to move</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-solid fa-ruler-combined w-4 text-center text-secondary" aria-hidden="true"></i>Total size
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">2,150 sqft</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-solid fa-bed w-4 text-center text-secondary" aria-hidden="true"></i>Bedrooms
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">3</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-solid fa-bath w-4 text-center text-secondary" aria-hidden="true"></i>Bathrooms
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">3</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-regular fa-square w-4 text-center text-secondary" aria-hidden="true"></i>Balconies
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">3</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-solid fa-layer-group w-4 text-center text-secondary" aria-hidden="true"></i>Floor
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">7th of 12</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-regular fa-sun w-4 text-center text-secondary" aria-hidden="true"></i>Facing
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">South-east</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-regular fa-calendar w-4 text-center text-secondary" aria-hidden="true"></i>Year built
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">2023</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-solid fa-table-cells w-4 text-center text-secondary" aria-hidden="true"></i>Flooring
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">Vitrified tiles</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-solid fa-bolt w-4 text-center text-secondary" aria-hidden="true"></i>Utilities
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">Gas, water, electricity</span>
+              </li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                <span class="flex items-center gap-3 text-sm text-primary/60">
+                  <i class="fa-solid fa-square-parking w-4 text-center text-secondary" aria-hidden="true"></i>Parking
+                </span>
+                <span class="text-right text-sm font-semibold text-primary">1 covered car space</span>
+              </li>
+            </ul>
           </div>
 
           <!-- Amenities -->
           <div id="amenities" class="mt-14 scroll-mt-28 border-t border-primary/10 pt-12">
-            <h2 class="font-serif text-2xl text-primary sm:text-3xl">Building amenities</h2>
+            <h2 class="font-display text-2xl text-primary sm:text-3xl">Building amenities</h2>
             <ul class="mt-6 grid gap-x-8 gap-y-5 text-primary/80 sm:grid-cols-2 lg:grid-cols-3">
               <li class="flex items-center gap-3"><i class="fa-solid fa-elevator w-5 text-secondary"></i> Two lifts</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-square-parking w-5 text-secondary"></i> Covered parking</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-bolt w-5 text-secondary"></i> Generator backup</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-square-parking w-5 text-secondary"></i> Covered
+                parking</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-bolt w-5 text-secondary"></i> Generator backup
+              </li>
               <li class="flex items-center gap-3"><i class="fa-solid fa-dumbbell w-5 text-secondary"></i> Gym</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-tree w-5 text-secondary"></i> Rooftop garden</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-shield-halved w-5 text-secondary"></i> 24/7 security</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-tree w-5 text-secondary"></i> Rooftop garden
+              </li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-shield-halved w-5 text-secondary"></i> 24/7
+                security</li>
               <li class="flex items-center gap-3"><i class="fa-solid fa-video w-5 text-secondary"></i> CCTV</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-fire-extinguisher w-5 text-secondary"></i> Fire safety system</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-child w-5 text-secondary"></i> Kids' play area</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-users w-5 text-secondary"></i> Community hall</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-mosque w-5 text-secondary"></i> Prayer space</li>
-              <li class="flex items-center gap-3"><i class="fa-solid fa-droplet w-5 text-secondary"></i> Underground water tank</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-fire-extinguisher w-5 text-secondary"></i> Fire
+                safety system</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-child w-5 text-secondary"></i> Kids' play area
+              </li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-users w-5 text-secondary"></i> Community hall
+              </li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-mosque w-5 text-secondary"></i> Prayer space
+              </li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-droplet w-5 text-secondary"></i> Underground
+                water tank</li>
             </ul>
           </div>
 
           <!-- Floor plan -->
           <div id="floor-plan" class="mt-14 scroll-mt-28 border-t border-primary/10 pt-12">
-            <h2 class="font-serif text-2xl text-primary sm:text-3xl">Floor plan</h2>
-            <div class="mt-6 grid gap-6 md:grid-cols-5">
-              <div class="border border-primary/10 bg-surface p-4 md:col-span-3">
+            <h2 class="font-display text-2xl text-primary sm:text-3xl">Floor plan</h2>
+
+            <div class="mt-8 grid gap-8 md:grid-cols-5 md:gap-10">
+
+              <!-- Plan image -->
+              <div class="border border-primary/10 bg-surface p-4 sm:p-6 md:col-span-3">
                 <img src="./assets/images/details/floor-plan.jpg" alt="Floor plan of Skyline Residence" loading="lazy"
                   class="aspect-[4/3] w-full object-contain" />
               </div>
+
+              <!-- Room sizes -->
               <div class="md:col-span-2">
-                <p class="text-sm text-primary/60">Approximate room sizes</p>
-                <dl class="mt-3 divide-y divide-primary/10 border-y border-primary/10 text-sm">
-                  <div class="flex justify-between py-3"><dt class="text-primary/70">Living and dining</dt><dd class="font-medium text-primary">22' × 16'</dd></div>
-                  <div class="flex justify-between py-3"><dt class="text-primary/70">Master bedroom</dt><dd class="font-medium text-primary">16' × 14'</dd></div>
-                  <div class="flex justify-between py-3"><dt class="text-primary/70">Bedroom 2</dt><dd class="font-medium text-primary">14' × 12'</dd></div>
-                  <div class="flex justify-between py-3"><dt class="text-primary/70">Bedroom 3</dt><dd class="font-medium text-primary">13' × 12'</dd></div>
-                  <div class="flex justify-between py-3"><dt class="text-primary/70">Kitchen</dt><dd class="font-medium text-primary">12' × 10'</dd></div>
-                  <div class="flex justify-between py-3"><dt class="text-primary/70">Balconies (3)</dt><dd class="font-medium text-primary">8' × 5' each</dd></div>
-                </dl>
+                <p class="text-xs font-medium uppercase tracking-[0.14em] text-primary/55">Approximate room sizes</p>
+
+                <ul class="mt-4 border-t border-primary/10">
+                  <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                    <span class="flex items-center gap-3 text-sm text-primary/60">
+                      <i class="fa-solid fa-couch w-4 text-center text-secondary" aria-hidden="true"></i>Living and
+                      dining
+                    </span>
+                    <span class="text-right text-sm font-semibold text-primary">22' × 16'</span>
+                  </li>
+                  <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                    <span class="flex items-center gap-3 text-sm text-primary/60">
+                      <i class="fa-solid fa-bed w-4 text-center text-secondary" aria-hidden="true"></i>Master bedroom
+                    </span>
+                    <span class="text-right text-sm font-semibold text-primary">16' × 14'</span>
+                  </li>
+                  <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                    <span class="flex items-center gap-3 text-sm text-primary/60">
+                      <i class="fa-solid fa-bed w-4 text-center text-secondary" aria-hidden="true"></i>Bedroom 2
+                    </span>
+                    <span class="text-right text-sm font-semibold text-primary">14' × 12'</span>
+                  </li>
+                  <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                    <span class="flex items-center gap-3 text-sm text-primary/60">
+                      <i class="fa-solid fa-bed w-4 text-center text-secondary" aria-hidden="true"></i>Bedroom 3
+                    </span>
+                    <span class="text-right text-sm font-semibold text-primary">13' × 12'</span>
+                  </li>
+                  <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                    <span class="flex items-center gap-3 text-sm text-primary/60">
+                      <i class="fa-solid fa-kitchen-set w-4 text-center text-secondary" aria-hidden="true"></i>Kitchen
+                    </span>
+                    <span class="text-right text-sm font-semibold text-primary">12' × 10'</span>
+                  </li>
+                  <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4">
+                    <span class="flex items-center gap-3 text-sm text-primary/60">
+                      <i class="fa-regular fa-square w-4 text-center text-secondary" aria-hidden="true"></i>Balconies
+                      (3)
+                    </span>
+                    <span class="text-right text-sm font-semibold text-primary">8' × 5' each</span>
+                  </li>
+                </ul>
               </div>
+
             </div>
           </div>
 
           <!-- Video -->
           <div id="video" class="mt-14 scroll-mt-28 border-t border-primary/10 pt-12">
-            <h2 class="font-serif text-2xl text-primary sm:text-3xl">Video tour</h2>
-            <a href="#" class="group relative mt-6 block aspect-video overflow-hidden bg-primary/10" aria-label="Play video tour">
-              <img src="./assets/images/details/video-cover.jpg" alt="" loading="lazy"
+            <h2 class="font-display text-2xl text-primary sm:text-3xl">Video tour</h2>
+
+            <!-- Thumbnail trigger (Preline overlay) -->
+            <!-- Replace mP0s5s0i20E in the thumbnail src and in the iframe src below -->
+            <button type="button" aria-label="Play video tour" aria-haspopup="dialog" aria-expanded="false"
+              aria-controls="hs-video-modal" data-hs-overlay="#hs-video-modal"
+              class="group cursor-pointer relative mt-8 block aspect-video w-full overflow-hidden bg-primary/10 text-left focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary">
+              <img src="https://i.ytimg.com/vi/mP0s5s0i20E/maxresdefault.jpg" alt="" loading="lazy"
                 class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <span class="absolute inset-0 bg-primary/30"></span>
-              <span class="absolute left-1/2 top-1/2 flex size-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-white text-primary transition-colors duration-300 group-hover:bg-secondary group-hover:text-white">
-                <i class="fa-solid fa-play text-xl"></i>
+              <span
+                class="absolute inset-0 bg-primary/30 transition-colors duration-300 group-hover:bg-primary/40"></span>
+              <span
+                class="absolute left-1/2 top-1/2 flex size-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-white text-primary transition-colors duration-300 group-hover:bg-secondary group-hover:text-white">
+                <i class="fa-solid fa-play pl-1 text-xl" aria-hidden="true"></i>
               </span>
-              <span class="absolute bottom-4 left-4 bg-primary px-3 py-1.5 text-xs text-white">Walkthrough · 3:12</span>
-            </a>
+              <span
+                class="absolute bottom-4 left-4 bg-primary px-3 py-1.5 text-xs font-medium tracking-wide text-white">Video
+                tour · 0:15</span>
+            </button>
+
+            <!-- Preline modal -->
+            <div id="hs-video-modal"
+              class="hs-overlay pointer-events-none fixed start-0 top-0 z-80 hidden size-full overflow-y-auto overflow-x-hidden"
+              role="dialog" tabindex="-1" aria-label="Video tour"
+              data-hs-overlay-options='{"backdropClasses": "bg-primary/85 backdrop-blur-sm"}'>
+              <div
+                class="pointer-events-auto m-3 mt-0 opacity-0 ease-out transition-all duration-300 hs-overlay-open:mt-16 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-4xl">
+                <div class="relative">
+                  <button type="button" aria-label="Close video" data-hs-overlay="#hs-video-modal"
+                    class="absolute -top-12 right-0 flex size-10 items-center justify-center text-white transition-colors hover:text-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                    <i class="fa-solid fa-xmark text-2xl" aria-hidden="true"></i>
+                  </button>
+                  <div class="aspect-video w-full bg-black">
+                    <iframe class="size-full" loading="lazy" title="Video tour"
+                      src="https://www.youtube-nocookie.com/embed/mP0s5s0i20E?autoplay=1&rel=0&modestbranding=1&playsinline=1"
+                      allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Payment plan -->
-          <div id="payment" class="mt-14 scroll-mt-28 border-t border-primary/10 pt-12">
-            <h2 class="font-serif text-2xl text-primary sm:text-3xl">Payment plan</h2>
-            <p class="mt-4 max-w-2xl leading-8 text-primary/70">
-              A sample schedule for the full price of ৳2.85 Crore. Bank loans are also available and our team can help you compare offers.
-            </p>
-            <div class="mt-6 overflow-x-auto">
-              <table class="w-full min-w-[480px] border-collapse text-left text-sm">
-                <thead>
-                  <tr class="bg-primary text-white">
-                    <th class="px-5 py-4 font-medium">Stage</th>
-                    <th class="px-5 py-4 font-medium">Timing</th>
-                    <th class="px-5 py-4 text-right font-medium">Amount</th>
-                  </tr>
-                </thead>
-                <tbody class="bg-surface text-primary">
-                  <tr class="border-b border-primary/10"><td class="px-5 py-4">Booking money</td><td class="px-5 py-4 text-primary/70">At booking</td><td class="px-5 py-4 text-right font-medium">৳10 Lac</td></tr>
-                  <tr class="border-b border-primary/10"><td class="px-5 py-4">Down payment (20%)</td><td class="px-5 py-4 text-primary/70">At agreement signing</td><td class="px-5 py-4 text-right font-medium">৳57 Lac</td></tr>
-                  <tr class="border-b border-primary/10"><td class="px-5 py-4">24 monthly installments</td><td class="px-5 py-4 text-primary/70">Every month</td><td class="px-5 py-4 text-right font-medium">৳7.5 Lac each</td></tr>
-                  <tr><td class="px-5 py-4">Final payment</td><td class="px-5 py-4 text-primary/70">At registration</td><td class="px-5 py-4 text-right font-medium">৳38 Lac</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="mt-4 text-xs text-primary/55">Registration fees, VAT and other government charges are additional and will be explained before you sign.</p>
-          </div>
 
           <!-- Location -->
           <div id="location" class="mt-14 scroll-mt-28 border-t border-primary/10 pt-12">
-            <h2 class="font-serif text-2xl text-primary sm:text-3xl">Location and nearby</h2>
+            <h2 class="font-display text-2xl text-primary sm:text-3xl">Location and nearby</h2>
             <div class="mt-6 overflow-hidden bg-primary/10">
-              <iframe title="Apartment location"
-                src="https://www.google.com/maps?q=Gulshan+2,+Dhaka&output=embed"
-                class="h-[320px] w-full border-0 grayscale transition-all duration-500 hover:grayscale-0 lg:h-[400px]"
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+              <iframe title="Apartment location" src="https://www.google.com/maps?q=Gulshan+2,+Dhaka&output=embed"
+                class="h-[320px] w-full border-0 lg:h-[400px]" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
             </div>
             <ul class="mt-6 grid gap-x-10 sm:grid-cols-2">
-              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span class="flex items-center gap-3 text-primary/80"><i class="fa-solid fa-graduation-cap w-5 text-secondary"></i> International school</span><span class="text-sm font-medium text-primary">0.8 km</span></li>
-              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span class="flex items-center gap-3 text-primary/80"><i class="fa-solid fa-hospital w-5 text-secondary"></i> Hospital</span><span class="text-sm font-medium text-primary">1.2 km</span></li>
-              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span class="flex items-center gap-3 text-primary/80"><i class="fa-solid fa-bag-shopping w-5 text-secondary"></i> Shopping mall</span><span class="text-sm font-medium text-primary">1.5 km</span></li>
-              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span class="flex items-center gap-3 text-primary/80"><i class="fa-solid fa-bus w-5 text-secondary"></i> Bus stop</span><span class="text-sm font-medium text-primary">0.4 km</span></li>
-              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span class="flex items-center gap-3 text-primary/80"><i class="fa-solid fa-tree w-5 text-secondary"></i> Park and lake</span><span class="text-sm font-medium text-primary">0.6 km</span></li>
-              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span class="flex items-center gap-3 text-primary/80"><i class="fa-solid fa-plane w-5 text-secondary"></i> Airport</span><span class="text-sm font-medium text-primary">9 km</span></li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span
+                  class="flex items-center gap-3 text-primary/80"><i
+                    class="fa-solid fa-graduation-cap w-5 text-secondary"></i> International school</span><span
+                  class="text-sm font-medium text-primary">0.8 km</span></li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span
+                  class="flex items-center gap-3 text-primary/80"><i
+                    class="fa-solid fa-hospital w-5 text-secondary"></i> Hospital</span><span
+                  class="text-sm font-medium text-primary">1.2 km</span></li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span
+                  class="flex items-center gap-3 text-primary/80"><i
+                    class="fa-solid fa-bag-shopping w-5 text-secondary"></i> Shopping mall</span><span
+                  class="text-sm font-medium text-primary">1.5 km</span></li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span
+                  class="flex items-center gap-3 text-primary/80"><i class="fa-solid fa-bus w-5 text-secondary"></i> Bus
+                  stop</span><span class="text-sm font-medium text-primary">0.4 km</span></li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span
+                  class="flex items-center gap-3 text-primary/80"><i class="fa-solid fa-tree w-5 text-secondary"></i>
+                  Park and lake</span><span class="text-sm font-medium text-primary">0.6 km</span></li>
+              <li class="flex items-center justify-between gap-4 border-b border-primary/10 py-4"><span
+                  class="flex items-center gap-3 text-primary/80"><i class="fa-solid fa-plane w-5 text-secondary"></i>
+                  Airport</span><span class="text-sm font-medium text-primary">9 km</span></li>
             </ul>
           </div>
 
@@ -450,92 +656,123 @@
               Every listing is checked before it goes live. The following documents are available for review on request.
             </p>
             <ul class="mt-6 grid gap-4 sm:grid-cols-2">
-              <li class="flex items-center gap-3 bg-surface px-5 py-4 text-primary"><i class="fa-solid fa-circle-check text-secondary"></i> Approved building plan</li>
-              <li class="flex items-center gap-3 bg-surface px-5 py-4 text-primary"><i class="fa-solid fa-circle-check text-secondary"></i> Clear land title</li>
-              <li class="flex items-center gap-3 bg-surface px-5 py-4 text-primary"><i class="fa-solid fa-circle-check text-secondary"></i> Utility connections ready</li>
-              <li class="flex items-center gap-3 bg-surface px-5 py-4 text-primary"><i class="fa-solid fa-circle-check text-secondary"></i> Ready for registration</li>
+              <li class="flex items-center gap-3 bg-surface px-5 py-4 text-primary"><i
+                  class="fa-solid fa-circle-check text-secondary"></i> Approved building plan</li>
+              <li class="flex items-center gap-3 bg-surface px-5 py-4 text-primary"><i
+                  class="fa-solid fa-circle-check text-secondary"></i> Clear land title</li>
+              <li class="flex items-center gap-3 bg-surface px-5 py-4 text-primary"><i
+                  class="fa-solid fa-circle-check text-secondary"></i> Utility connections ready</li>
+              <li class="flex items-center gap-3 bg-surface px-5 py-4 text-primary"><i
+                  class="fa-solid fa-circle-check text-secondary"></i> Ready for registration</li>
             </ul>
 
-            <div class="mt-8 flex flex-col gap-3 bg-surface p-6 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p class="text-sm text-primary/55">Developer</p>
-                <p class="mt-1 font-serif text-xl text-primary">Skyline Developments Ltd.</p>
-              </div>
-              <div>
-                <p class="text-sm text-primary/55">Project</p>
-                <p class="mt-1 font-serif text-xl text-primary">Skyline Residence, 48 units</p>
-              </div>
-              <div>
-                <p class="text-sm text-primary/55">Completed</p>
-                <p class="mt-1 font-serif text-xl text-primary">March 2023</p>
-              </div>
-            </div>
+            <!-- Developer info -->
+            <ul class="mt-8 grid gap-px border border-primary/10 bg-primary/10 sm:grid-cols-3">
+              <li class="flex items-start gap-4 bg-surface px-5 py-6">
+                <i class="fa-regular fa-building mt-1 w-5 text-center text-lg text-secondary" aria-hidden="true"></i>
+                <div>
+                  <p class="text-xs uppercase tracking-wider text-primary/55">Developer</p>
+                  <p class="mt-2 font-display text-xl leading-snug text-primary">Skyline Developments Ltd.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4 bg-surface px-5 py-6">
+                <i class="fa-solid fa-city mt-1 w-5 text-center text-lg text-secondary" aria-hidden="true"></i>
+                <div>
+                  <p class="text-xs uppercase tracking-wider text-primary/55">Project</p>
+                  <p class="mt-2 font-display text-xl leading-snug text-primary">Skyline Residence, 48 units</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4 bg-surface px-5 py-6">
+                <i class="fa-regular fa-calendar-check mt-1 w-5 text-center text-lg text-secondary"
+                  aria-hidden="true"></i>
+                <div>
+                  <p class="text-xs uppercase tracking-wider text-primary/55">Completed</p>
+                  <p class="mt-2 font-display text-xl leading-snug text-primary">March 2023</p>
+                </div>
+              </li>
+            </ul>
+
           </div>
 
         </div>
 
         <!-- Sidebar -->
         <aside class="lg:col-span-4">
+          <!-- Fixed sidebar (sticky) -->
           <div class="lg:sticky lg:top-28">
+            <div class="flex flex-col border border-primary/10 bg-surface lg:max-h-[calc(100vh-8rem)]">
 
-            <div class="bg-primary p-6 text-white">
-              <p class="text-sm text-white/60">Asking price</p>
-              <p class="mt-1 font-serif text-3xl">৳2.85 Crore</p>
-              <p class="mt-1 text-sm text-white/60">৳13,256 per sqft</p>
-            </div>
+              <!-- Scrollable content -->
+              <div
+                class="overflow-y-auto overscroll-contain p-6 [scrollbar-width:thin] [scrollbar-color:theme(colors.primary/0.25)_transparent] sm:p-7">
 
-            <div class="border border-t-0 border-primary/10 bg-surface p-6">
-
-              <div class="flex items-center gap-4">
-                <img src="./assets/images/agents/agent-1.jpg" alt="Rahim Chowdhury" loading="lazy" class="size-16 object-cover" />
-                <div class="min-w-0 flex-1">
-                  <p class="font-serif text-lg text-primary">Rahim Chowdhury</p>
-                  <p class="text-sm text-primary/60">Head of sales</p>
+                <!-- Agent -->
+                <div class="flex items-center gap-4">
+                  <img src="/agents/agent-1.avif" alt="Rahim Chowdhury" width="64" height="64" loading="lazy"
+                    class="size-16 shrink-0 object-cover" />
+                  <div class="min-w-0 flex-1">
+                    <p class="truncate font-display text-xl leading-tight text-primary">Rahim Chowdhury</p>
+                    <p class="mt-1 text-sm text-primary/60">Head of sales</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <a href="tel:+8801700000001" aria-label="Call agent"
+                      class="flex size-10 items-center justify-center border border-primary/25 text-primary transition-colors hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+                      <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://wa.me/8801700000001" aria-label="WhatsApp agent"
+                      class="flex size-10 items-center justify-center border border-primary/25 text-primary transition-colors hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+                      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                  </div>
                 </div>
-                <div class="flex gap-2">
-                  <a href="tel:+8801700000001" aria-label="Call agent" class="flex size-10 items-center justify-center border border-primary/25 text-primary transition-colors hover:bg-primary hover:text-white"><i class="fa-solid fa-phone"></i></a>
-                  <a href="https://wa.me/8801700000001" aria-label="WhatsApp agent" class="flex size-10 items-center justify-center border border-primary/25 text-primary transition-colors hover:bg-primary hover:text-white"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
+
+                <!-- Form -->
+                <form action="#" method="post" class="mt-6 space-y-4 border-t border-primary/10 pt-6">
+                  <h2 class="font-display text-2xl text-primary">Request a site visit</h2>
+
+                  <div>
+                    <label for="d-name" class="sr-only">Full name</label>
+                    <input type="text" id="d-name" name="name" required autocomplete="name" placeholder="Full name *"
+                      class="w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary" />
+                  </div>
+
+                  <div>
+                    <label for="d-phone" class="sr-only">Phone</label>
+                    <input type="tel" id="d-phone" name="phone" required autocomplete="tel" placeholder="Phone *"
+                      class="w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary" />
+                  </div>
+
+                  <div>
+                    <label for="d-email" class="sr-only">Email</label>
+                    <input type="email" id="d-email" name="email" autocomplete="email" placeholder="Email"
+                      class="w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary" />
+                  </div>
+
+                  <div>
+                    <label for="d-date" class="text-xs uppercase tracking-wider text-primary/55">Preferred visit
+                      date</label>
+                    <input type="date" id="d-date" name="visit_date"
+                      class="mt-1.5 w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors focus:border-secondary" />
+                  </div>
+
+                  <div>
+                    <label for="d-message" class="sr-only">Message</label>
+                    <textarea id="d-message" name="message" rows="3"
+                      class="w-full resize-y border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors focus:border-secondary">I am interested in Skyline Residence (NB-1042). Please contact me.</textarea>
+                  </div>
+
+                  <button type="submit"
+                    class="group flex w-full items-center justify-center gap-3 bg-secondary px-6 py-4 text-sm font-medium text-white transition-colors duration-300 hover:bg-secondary-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+                    Send request
+                    <i class="fa-solid fa-arrow-right-long transition-transform duration-300 group-hover:translate-x-1.5"
+                      aria-hidden="true"></i>
+                  </button>
+
+                  <p class="text-center text-xs text-primary/55">We usually reply within one working day.</p>
+                </form>
+
               </div>
-
-              <form action="#" method="post" class="mt-6 space-y-4 border-t border-primary/10 pt-6">
-                <h2 class="font-serif text-xl text-primary">Request a site visit</h2>
-
-                <div>
-                  <label for="d-name" class="sr-only">Full name</label>
-                  <input type="text" id="d-name" name="name" required autocomplete="name" placeholder="Full name *"
-                    class="w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary" />
-                </div>
-                <div>
-                  <label for="d-phone" class="sr-only">Phone</label>
-                  <input type="tel" id="d-phone" name="phone" required autocomplete="tel" placeholder="Phone *"
-                    class="w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary" />
-                </div>
-                <div>
-                  <label for="d-email" class="sr-only">Email</label>
-                  <input type="email" id="d-email" name="email" autocomplete="email" placeholder="Email"
-                    class="w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors placeholder:text-primary/40 focus:border-secondary" />
-                </div>
-                <div>
-                  <label for="d-date" class="text-xs text-primary/55">Preferred visit date</label>
-                  <input type="date" id="d-date" name="visit_date"
-                    class="mt-1 w-full border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors focus:border-secondary" />
-                </div>
-                <div>
-                  <label for="d-message" class="sr-only">Message</label>
-                  <textarea id="d-message" name="message" rows="3"
-                    class="w-full resize-y border border-primary/20 bg-surface px-4 py-3.5 text-sm text-primary outline-none transition-colors focus:border-secondary">I am interested in Skyline Residence (NB-1042). Please contact me.</textarea>
-                </div>
-
-                <button type="submit"
-                  class="group flex w-full items-center justify-center gap-3 bg-secondary px-6 py-4 text-sm font-medium text-white transition-colors duration-300 hover:bg-secondary-dark">
-                  Send request
-                  <i class="fa-solid fa-arrow-right-long transition-transform duration-300 group-hover:translate-x-1.5"></i>
-                </button>
-                <p class="text-center text-xs text-primary/55">We usually reply within one working day.</p>
-              </form>
             </div>
-
           </div>
         </aside>
 
@@ -547,7 +784,8 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex items-end justify-between gap-6">
           <h2 class="font-serif text-3xl text-primary sm:text-4xl">Similar apartments</h2>
-          <a href="apartments.html" class="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-secondary">
+          <a href="apartments.html"
+            class="group inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-secondary">
             View all
             <i class="fa-solid fa-arrow-right-long transition-transform duration-300 group-hover:translate-x-1.5"></i>
           </a>
@@ -555,53 +793,137 @@
 
         <div class="mt-10 grid gap-6 md:grid-cols-3">
 
-          <article class="group bg-canvas">
-            <a href="apartment-details.html" class="block">
-              <div class="aspect-[4/3] overflow-hidden bg-primary/10">
-                <img src="./assets/images/apartments/apt-2.jpg" alt="Lakeview Heights" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+
+          <!-- Card 1 -->
+          <article
+            class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+            <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
+              <img src="./../assets/images/apartments/apt-1.avif" alt="Skyline Residence" loading="lazy"
+                class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent">
               </div>
-              <div class="p-5">
-                <h3 class="font-serif text-lg text-primary">Lakeview Heights</h3>
-                <p class="mt-1 text-sm text-primary/60">Banani, Dhaka</p>
-                <div class="mt-4 flex items-center justify-between border-t border-primary/10 pt-4 text-sm">
-                  <span class="font-serif text-lg text-secondary-dark">৳1.95 Crore</span>
-                  <span class="text-primary/60">3 bd · 2 ba · 1,850 sqft</span>
-                </div>
-              </div>
-            </a>
+              <span
+                class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">Featured</span>
+              <button type="button" aria-label="Save apartment"
+                class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="p-4">
+              <a href="./../pages/apartment-details.html"
+                class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                  Skyline
+                  Residence</p>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+              </a>
+              <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
+                <i class="fa-solid fa-location-dot text-secondary"></i> Gulshan 2, Dhaka
+              </p>
+              <ul
+                class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
+                <li><i class="fa-solid fa-bed text-secondary"></i>
+                  <p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p>
+                </li>
+                <li><i class="fa-solid fa-bath text-secondary"></i>
+                  <p class="mt-1.5 text-sm font-medium text-primary">3 Baths</p>
+                </li>
+                <li><i class="fa-solid fa-ruler-combined text-secondary"></i>
+                  <p class="mt-1.5 text-sm font-medium text-primary">2,150 sqft</p>
+                </li>
+              </ul>
+            </div>
           </article>
 
-          <article class="group bg-canvas">
-            <a href="apartment-details.html" class="block">
-              <div class="aspect-[4/3] overflow-hidden bg-primary/10">
-                <img src="./assets/images/apartments/apt-6.jpg" alt="Crown Tower Penthouse" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <!-- Card 2 -->
+          <article
+            class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+            <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
+              <img src="./../assets/images/apartments/apt-2.avif" alt="Lakeview Heights" loading="lazy"
+                class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent">
               </div>
-              <div class="p-5">
-                <h3 class="font-serif text-lg text-primary">Crown Tower Penthouse</h3>
-                <p class="mt-1 text-sm text-primary/60">Gulshan 1, Dhaka</p>
-                <div class="mt-4 flex items-center justify-between border-t border-primary/10 pt-4 text-sm">
-                  <span class="font-serif text-lg text-secondary-dark">৳4.50 Crore</span>
-                  <span class="text-primary/60">4 bd · 4 ba · 3,200 sqft</span>
-                </div>
-              </div>
-            </a>
+              <span
+                class="absolute left-0 top-5 bg-primary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">New</span>
+              <button type="button" aria-label="Save apartment"
+                class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="p-4">
+              <a href="./../pages/apartment-details.html"
+                class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">
+                  Lakeview
+                  Heights</p>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+              </a>
+
+              <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
+                <i class="fa-solid fa-location-dot text-secondary"></i> Banani, Dhaka
+              </p>
+              <ul
+                class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
+                <li><i class="fa-solid fa-bed text-secondary"></i>
+                  <p class="mt-1.5 text-sm font-medium text-primary">3 Beds</p>
+                </li>
+                <li><i class="fa-solid fa-bath text-secondary"></i>
+                  <p class="mt-1.5 text-sm font-medium text-primary">2 Baths</p>
+                </li>
+                <li><i class="fa-solid fa-ruler-combined text-secondary"></i>
+                  <p class="mt-1.5 text-sm font-medium text-primary">1,850 sqft</p>
+                </li>
+              </ul>
+            </div>
           </article>
 
-          <article class="group bg-canvas">
-            <a href="apartment-details.html" class="block">
-              <div class="aspect-[4/3] overflow-hidden bg-primary/10">
-                <img src="./assets/images/apartments/apt-4.jpg" alt="Marina Court" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <!-- Card 3 -->
+          <article
+            class="group relative bg-surface transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/10">
+            <div class="relative aspect-[4/3] overflow-hidden bg-primary/10">
+              <img src="./../assets/images/apartments/apt-3.avif" alt="The Orchard" loading="lazy"
+                class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent">
               </div>
-              <div class="p-5">
-                <h3 class="font-serif text-lg text-primary">Marina Court</h3>
-                <p class="mt-1 text-sm text-primary/60">Bashundhara R/A, Dhaka</p>
-                <div class="mt-4 flex items-center justify-between border-t border-primary/10 pt-4 text-sm">
-                  <span class="font-serif text-lg text-secondary-dark">৳1.15 Crore</span>
-                  <span class="text-primary/60">3 bd · 3 ba · 1,650 sqft</span>
-                </div>
-              </div>
-            </a>
+              <span
+                class="absolute left-0 top-5 bg-secondary px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">Hot
+                Deal</span>
+              <button type="button" aria-label="Save apartment"
+                class="absolute right-4 top-4 z-10 flex size-10 items-center justify-center bg-white/90 text-primary transition-colors hover:bg-secondary hover:text-white">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="p-4">
+
+
+              <a href="./../pages/apartment-details.html"
+                class="flex items-start justify-between gap-3 font-display text-xl text-primary">
+                <p class="transition-colors after:absolute after:inset-0 group-hover:text-secondary">The
+                  Orchard</p>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square mt-1 text-sm text-primary/40 transition-colors group-hover:text-secondary"></i>
+              </a>
+
+              <p class="mt-2 flex items-center gap-2 text-sm text-primary/70">
+                <i class="fa-solid fa-location-dot text-secondary"></i> Dhanmondi, Dhaka
+              </p>
+              <ul
+                class="mt-6 grid grid-cols-3 justify-start gap-4 divide-x divide-primary/10 border-t border-primary/10 pt-5">
+                <li><i class="fa-solid fa-bed text-secondary"></i>
+                  <p class="mt-1.5 text-sm font-medium text-primary">2 Beds</p>
+                </li>
+                <li><i class="fa-solid fa-bath text-secondary"></i>
+                  <p class="mt-1.5 text-sm font-medium text-primary">2 Baths</p>
+                </li>
+                <li><i class="fa-solid fa-ruler-combined text-secondary"></i>
+                  <p class="mt-1.5 text-sm font-medium text-primary">1,420 sqft</p>
+                </li>
+              </ul>
+            </div>
           </article>
+
 
         </div>
       </div>
@@ -611,8 +933,10 @@
 
   <!-- Mobile action bar -->
   <div class="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 border-t border-primary/10 bg-canvas lg:hidden">
-    <a href="tel:+8801700000001" class="flex items-center justify-center gap-2 py-4 text-sm font-medium text-primary"><i class="fa-solid fa-phone"></i> Call</a>
-    <a href="#d-name" class="flex items-center justify-center gap-2 bg-secondary py-4 text-sm font-medium text-white"><i class="fa-regular fa-calendar-check"></i> Book a visit</a>
+    <a href="tel:+8801700000001" class="flex items-center justify-center gap-2 py-4 text-sm font-medium text-primary"><i
+        class="fa-solid fa-phone"></i> Call</a>
+    <a href="#d-name" class="flex items-center justify-center gap-2 bg-secondary py-4 text-sm font-medium text-white"><i
+        class="fa-regular fa-calendar-check"></i> Book a visit</a>
   </div>
 
   <!-- Footer -->
@@ -755,6 +1079,10 @@
 
   </footer>
   <script src="./../assets/js/preline.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+
   <script src="./../assets/js/main.js"></script>
 </body>
+
 </html>
