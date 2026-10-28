@@ -51,3 +51,10 @@ if (galleryEl && typeof Swiper !== 'undefined') {
   });
 }
 
+const videoModal = document.getElementById("hs-video-modal");
+const videoFrame = videoModal.querySelector("iframe");
+
+// Modal close হলে video playback বন্ধ করো
+videoModal.addEventListener("close.hs.overlay", () => {
+  videoFrame.src = videoFrame.src;
+});
